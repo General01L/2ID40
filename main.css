@@ -5,32 +5,10 @@ body {
   background: linear-gradient(#C0FFFF, #FFFFFF);
 }
 
-header {
-  padding: 1em 0em;
-}
-
-header {
-  display: flex;
-  align-items: center;
-}
-
 header h1 {
   font-size: 3em;
   font-weight: bold;
   margin: 0;
-}
-
-header nav {
-  display: flex;
-  font-size: 2em;
-  font-weight: bold;
-  color: #FFA10D;
-  justify-content: flex-end;
-}
-
-header p {
-  padding: 0em 1em;
-  margin: 0em;
 }
 
 section .row img {
