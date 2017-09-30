@@ -1,6 +1,6 @@
 1. Temperature
 2. Calendar and events
-3. Health
+3. Health/ Blood pressure, heartrate
 4. Day Statistics 
 5. Sleep
 6. Share your stats(social media)
