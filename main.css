@@ -2,7 +2,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 100%;
-  background: linear-gradient(#000000, #3B3B3B);
+  background: linear-gradient(#C0FFFF, #FFFFFF);
 }
 
 header {
@@ -40,6 +40,3 @@ section .row img {
   height: 300px;
 }
 
-.active {
-  background: linear-gradient(to bottom right, #C0FFFF, #FFFFFF);
-}
