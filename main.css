@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 100%;
   background: linear-gradient(#000000, #3B3B3B);
@@ -41,5 +41,5 @@ section .row img {
 }
 
 .active {
-  background: linear-gradient(to bottom right, #363636, #696969);
+  background: linear-gradient(to bottom right, #C0FFFF, #FFFFFF);
 }
