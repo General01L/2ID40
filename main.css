@@ -40,3 +40,10 @@ section .row img {
   height: 300px;
 }
 
+footer {
+  font-size: 2em;
+  padding: 0.5em 0;
+  color: #FFF;
+  background: linear-gradient(to bottom right, #8F6400, #FFFFFF);
+  background-size: cover;
+}
