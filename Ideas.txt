@@ -1,0 +1,12 @@
+1. Temperature
+2. Calendar and events
+3. Health
+4. Day Statistics 
+5. Sleep
+6. Share your stats(social media)
+7. Weather and maps
+8. Challenges
+9. Edit your dashboard option
+10. Login/Logout
+11. Stress level counter
+12. Battery level display for device
