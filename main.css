@@ -33,6 +33,13 @@ header p {
   margin: 0em;
 }
 
+section .row img {
+  margin: 0em 0em 3em;
+  padding: 2em;
+  width: 300px;
+  height: 300px;
+}
+
 .active {
   background: linear-gradient(to bottom right, #363636, #696969);
 }
