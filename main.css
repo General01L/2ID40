@@ -2,7 +2,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 100%;
-  background: linear-gradient(#C0FFFF, #FFFFFF);
+  background: #C0FFFF;
 }
 
 header h1 {
