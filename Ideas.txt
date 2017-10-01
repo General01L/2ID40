@@ -4,7 +4,7 @@
 4. Day Statistics 
 5. Sleep
 6. Share your stats(social media)
-7. Weather and maps
+7. Weather and maps, gps
 8. Challenges
 9. Edit your dashboard option
 10. Login/Logout
