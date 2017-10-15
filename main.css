@@ -4,6 +4,7 @@ body {
   font-size: 100%;
   background: linear-gradient(#C7FF00, #0CFF00) ;
   margin: 0;
+  padding: 0;
 }
 
 header h1{
@@ -46,7 +47,6 @@ section .row{
 
 footer {
   font-size: 1.5em;
-  padding: 0.25em 0;
   color: #FFF;
   background: #000000;
   position: absolute;
