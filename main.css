@@ -29,11 +29,9 @@ section .row{
   width: 100%;
 }
 
-section .container-controlbar{
-  padding: 0.25em 0;
+.controlbar{
   background: #000000;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
 }
 
