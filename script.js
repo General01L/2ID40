@@ -1,5 +1,6 @@
 var sliderDay = document.getElementById("myDay");
 var outputDay = document.getElementById("day");
+var outputDay = document.getElementById("currenttemp");
 outputDay.innerHTML = sliderDay.value;
 
 sliderDay.oninput = function() {
@@ -21,3 +22,5 @@ outputOverride.innerHTML = sliderOverride.value;
 sliderOverride.oninput = function() {
     outputOverride.innerHTML = this.value;
 }
+
+
