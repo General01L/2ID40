@@ -39,7 +39,6 @@ section .row{
 }
 
 #circle img{
-  margin: 15px;
   width: 150px;
   height: 150px;
 }
@@ -55,6 +54,7 @@ section .row{
   background: #000000;
   height: 60px;
   position: absolute;
+  width: 100%;
   bottom: 40;
 }
 
@@ -66,5 +66,5 @@ footer {
   bottom: 0;
   /* Set the fixed height of the footer here */
   height: 40px;
-
+  width: 100%;
 }
