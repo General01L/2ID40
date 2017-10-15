@@ -45,22 +45,27 @@ section .row img {
 }
 
 section .row {
-    border-radius: 50px;
-    height: 500px;
+    border-radius: 20px;
+    height: 90px;
     justify-content: center;
     align-items: center;
     bottom: 0;
+    left: 0;
     display: flex;
     vertical-align: bottom;
 }
 
 section .row img {
 
-    border: 3px solid #FFF;
+    border-radius: 30px;
+    border-left: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    border-top: 6px solid #FFF;
+    border-bottom: 2px solid #FFF;
     margin: 0 0 0px;
 
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
 }
 section .row{
     align: center;
