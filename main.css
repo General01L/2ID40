@@ -70,7 +70,7 @@ section .row{
 
 }
 .thermostat {
-    background-image: url('heatgradient2.png');
+    background-image: url(images/heatgradient2.png);
 }
 
 #circle {
@@ -128,6 +128,6 @@ footer {
     width: 23px;
     height: 24px;
     border: 0;
-    background: url("thermostat.png");
+    background: url(thermostat.png);
     cursor: pointer;
 }
