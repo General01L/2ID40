@@ -48,13 +48,17 @@ section .row{
 #circle img{
   width: 150px;
   height: 150px;
+  position: relative;
+  z-index: 15
 }
 
 #circle {
-      width: 146px;
-      height: 146px;
-      border-radius: 73px;
-      background: red;
+    position: relative;
+    z-index: 10;
+    width: 146px;
+    height: 146px;
+    border-radius: 73px;
+    background: red;
     }
 
 .controlbar{
