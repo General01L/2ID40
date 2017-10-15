@@ -80,13 +80,6 @@ section .row{
 
 >>>>>>> af04db1b27b24db73fc603af8b7a402f007b5b01
 }
-.thermostat {
-    background-image: url(images/heatgradient2.png);
-    background-size: 500px 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
 
 #circle {
     position: relative;
