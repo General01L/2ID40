@@ -2,7 +2,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 100%;
-  background: #C0FFFF;
+  background: linear-gradient(C7FF00, 0CFF00) ;
 }
 
 section .row img {
