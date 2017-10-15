@@ -4,8 +4,9 @@ body {
     font-size: 100%;
     background-image: url("images/background_concept.png");
     background-color: #cfcece;
-    width: 1080px;
-    height:1920px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 header {
     padding: 0.5em 0;
@@ -46,13 +47,18 @@ section .row img {
 section .row {
     border-radius: 50px;
     height: 500px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
+    display: flex;
+    vertical-align: bottom;
 }
 
 section .row img {
+
+    border: 3px solid #000;
     margin: 0 0 5px;
+
     width: 100px;
     height: 100px;
 }
@@ -63,13 +69,16 @@ section .row{
 
 footer {
     font-size: 2em;
-    padding: 1em 0;
+    padding: 0.5em 0;
     color: #FFF;
-    background: #919191;
+    background: #666666;
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
+    text-align: center;
     
 }
+
+
