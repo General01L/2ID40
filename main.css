@@ -49,13 +49,13 @@ section .row{
   width: 150px;
   height: 150px;
   position: relative;
-  z-index: 15;
+  z-index: 10;
   margin: auto;
 }
 
 #circle {
     position: relative;
-    z-index: 10;
+    z-index: 40;
     width: 146px;
     height: 146px;
     border-radius: 73px;
