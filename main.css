@@ -36,7 +36,7 @@ section .row{
   background: rgba(245, 245, 245, 0.5);
 }
 .controlbar{
-  background: #FFFFFF;
+  background: #000000;
   width: 125%;
   height: 60px;
   position: absolute;
