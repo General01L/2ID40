@@ -53,6 +53,10 @@ section .row{
   margin: auto;
 }
 
+.thermostat {
+    background-image: url('/images/heatgradient2.png';
+}
+
 #circle {
     position: relative;
     z-index: 1;
