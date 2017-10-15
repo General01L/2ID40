@@ -48,12 +48,12 @@ section .row{
 #circle img{
   width: 150px;
   height: 150px;
-  position: absolute;
-  z-index: 5
+  position: relative;
+  z-index: 15
 }
 
 #circle {
-    position: absolute;
+    position: relative;
     z-index: 10;
     width: 146px;
     height: 146px;
