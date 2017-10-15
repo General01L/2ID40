@@ -48,19 +48,19 @@ section .row{
 #circle img{
   width: 150px;
   height: 150px;
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  z-index: 3;
   margin: auto;
 }
 
 #circle {
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    z-index: 1;
     width: 140px;
     height: 140px;
     border-radius: 70px;
     background: yellow;
-    margin: auto;
+    margin: auto auto;
     }
 
 .controlbar{
