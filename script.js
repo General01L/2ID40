@@ -15,7 +15,7 @@ sliderNight.oninput = function() {
 }
 
 var sliderOverride = document.getElementById("myOverride");
-var outputOverride = document.getElementById("Override");
+var outputOverride = document.getElementById("override");
 outputOverride.innerHTML = sliderOverride.value;
 
 sliderOverride.oninput = function() {
