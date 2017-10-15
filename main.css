@@ -38,7 +38,7 @@ section .row{
   background: rgba(245, 245, 245, 0.5);
 }
 
-.thermostat img{
+#circle img{
   margin: 15px;
   width: 150px;
   height: 150px;
