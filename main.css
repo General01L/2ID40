@@ -6,24 +6,11 @@ body {
 }
 
 section .row img {
-  margin: 0em 0em 3em;
-  padding: 2em;
-  border-radius: 30px;
-}
-
-section .row {
-    border-radius: 50px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section .row img {
   margin: 0 0 5px;
   width: 50px;
   height: 50px;
 }
+
 section .row{
   align: center;
   width: 100%;
