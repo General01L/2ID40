@@ -37,6 +37,22 @@ section .row{
   padding: 0.5em;
   background: rgba(245, 245, 245, 0.5);
 }
+
+.thermostat img{
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+#circle {
+      width: 145px;
+      height: 145px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: red;
+    }
+
 .controlbar{
   background: #000000;
   width: 125%;
