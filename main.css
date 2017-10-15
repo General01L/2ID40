@@ -149,7 +149,7 @@ footer {
 
 /* Table stuff */
 .tg{
-    width: 95%;
+    width: 100%;
     margin-left:auto; 
     margin-right:auto;
 
@@ -161,11 +161,8 @@ footer {
     font-family:Arial, sans-serif;
     font-size:14px;
     padding:10px 5px;
-    border-style:solid;
-    border-width:1px;
     overflow:hidden;
     word-break:normal;
-    border-color:#ccc;
     color:#333;
     background-color:#fff;
 }
@@ -174,11 +171,8 @@ footer {
     font-size:14px;
     font-weight:normal;
     padding:10px 5px;
-    border-style:solid;
-    border-width:1px;
     overflow:hidden;
     word-break:normal;
-    border-color:#fff;
     color:#fff;
     background-color:#444;
 }
@@ -195,9 +189,12 @@ footer {
 .tg .tg-baqh>img{
     max-height:45px;
     max-width:45px;
-    display:block;
+
     margin:0 auto;
-    
-    
+}
+.tg .tg-baqh>input[type=text] {
+    width: 100%;
+    padding: 0 0px;
+    box-sizing: border-box;
 }
 
