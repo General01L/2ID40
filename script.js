@@ -21,3 +21,9 @@ outputOverride.innerHTML = sliderOverride.value;
 sliderOverride.oninput = function() {
     outputOverride.innerHTML = this.value;
 }
+
+// desktop Thermostat keep the heigth/width ratio
+//var cw = $('#circle').width();
+//$('#circle').css({
+    'height': cw + '%';
+});
