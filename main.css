@@ -30,16 +30,18 @@ section .row{
 }
 
 .controlbar{
-  background: #000000;
+  background: #FFFFFF;
   width: 100%;
   height: 60px;
+  position: absolute;
+  bottom: 50;
 }
 
 footer {
   font-size: 1.5em;
   padding: 0.25em 0;
   color: #FFF;
-  background: #828282;
+  background: #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
