@@ -53,7 +53,6 @@ section .row{
 
 .controlbar{
   background: #000000;
-  width: 125%;
   height: 60px;
   position: absolute;
   bottom: 40;
@@ -65,7 +64,6 @@ footer {
   background: #000000;
   position: absolute;
   bottom: 0;
-  width: 125%;
   /* Set the fixed height of the footer here */
   height: 40px;
 
