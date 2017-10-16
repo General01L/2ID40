@@ -72,13 +72,8 @@ section .row{
     margin: auto;
     
     color: #fff;
-<<<<<<< HEAD
-    font-size: 2500%;
-    
-=======
-    font-size: 10em;
 
->>>>>>> af04db1b27b24db73fc603af8b7a402f007b5b01
+    font-size: 72pt;
 }
 
 #circle {
