@@ -46,7 +46,7 @@ section .row{
 }
 
 .welcomemessage{
-    font-size: 2em;
+    font-size: 1.5em;
     color: #000;
     padding: 0.5em;
     background: rgba(245, 245, 245, 0.8);
@@ -65,6 +65,7 @@ section .row{
     position: relative;
     z-index: 10;
     margin: auto;
+    padding: 2em;
 }
 
 #circle p{
@@ -90,6 +91,7 @@ section .row{
     height: 400px;
     border-radius: 10px;
     margin: auto auto;
+    padding: 2em;
 }
 
 .controlbar{
