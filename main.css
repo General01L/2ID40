@@ -140,6 +140,12 @@ footer {
     cursor: pointer;
 }
 
+.housecontainer img{
+    width: 100px;
+    height: 100px;
+}
+
+
 /* Table stuff */
 .tg{
     width: 100%;
