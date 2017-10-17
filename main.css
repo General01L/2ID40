@@ -146,6 +146,10 @@ footer {
     height: 300px;
 }
 
+.tempcontainer {
+    margin: auto;
+}
+
 
 /* Table stuff */
 .tg{
