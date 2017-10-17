@@ -45,6 +45,13 @@ section .row{
     background: rgba(245, 245, 245, 0.5);
 }
 
+.welcomemessage{
+    font-size: 2em;
+    color: #000;
+    padding: 0.5em;
+    background: rgba(245, 245, 245, 0.8);
+}
+
 .currentweather{
     font-size: 1em;
     color: #000;
