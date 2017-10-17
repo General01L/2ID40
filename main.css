@@ -140,9 +140,14 @@ footer {
     cursor: pointer;
 }
 
+.housecontainer {
+    margin; auto;
+    padding; 2em;
+}
+
 .housecontainer img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 
