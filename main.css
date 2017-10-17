@@ -109,6 +109,11 @@ footer {
     width: 100%;
 }
 
+.slidecontainer img{
+    width: 15px;
+    Height: 20px
+}
+
 .slider {
     -webkit-appearance: none;
     width: 100%;
