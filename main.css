@@ -155,6 +155,39 @@ footer {
     height: 300px;
 }
 
+/* switch button */
+.weekschedule{
+text-align: center;    
+}
+
+.weekschedule p{
+    display: inline-block;
+    font-size: 14pt;
+    padding-left:2em;
+    height: 60px;
+}
+
+.switchbutton{
+    
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px auto;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.switchbutton img{
+    width: 90%;
+    height: 90%;
+}
+
 /* Table stuff */
 .tg{
     width: 100%;
@@ -163,7 +196,6 @@ footer {
 
     border-collapse:collapse;
     border-spacing:1;
-
 }
 .tg td{
     font-family:Arial, sans-serif;
@@ -184,12 +216,12 @@ footer {
     color:#fff;
     background-color:#444;
 }
-.tg .tg-baqh{text-align:center;
+.tg .tg-baqh{
+    text-align:center;
     vertical-align:top;
     width: 45px;
     heigth: 45px;
     
-    vertical-align: middle;
     line-height: 20px;
     
     font-size: 14pt;
