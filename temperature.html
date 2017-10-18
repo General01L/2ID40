@@ -14,19 +14,20 @@
     </header>
     <section class="container">
       <div class="row text-center">
+        <h3><img src="images/thermostat_hot.png"/>Day Temperature: <span id="day"></span>°C</h3>
         <div id="slidecontainer">
-          <h3>Day Temperature: <span id="day"></span>°C</h3>
           <input type="range" min="5" max="30" value="20" step="0.1" class="slider" id="myDay">
         </div>
       </div>
       <div class="row text-center">
-        <h3>Night Temperature: <span id="night"></span>°C</h3>
+        <h3><img src="images/thermostat_cold.png"/>Night Temperature: <span id="night"></span>°C</h3>
         <div id="slidecontainer">
           <input type="range" min="5" max="30" value="15" step="0.1" class="slider" id="myNight">
         </div>
       </div>
       <div class="row text-center">
-        <h3>Temporary Override: <span id="override"></span>°C</h3>
+        <h3><img src="images/thermostat.png"/>Temporary Override: <span id="override"></span>°C</h3>
+        </div>
         <div id="slidecontainer">
           <input type="range" min="5" max="30" value="10" step="0.1" class="slider" id="myOverride">
         </div>
@@ -41,6 +42,9 @@
         <a href='settings.html'><img src="images/white/settings.png"/></a>
       </div>
     </section>
+    <div class="housecontainer text-center">
+      <img src="images/house.png"/>
+    </div>
     <footer>
       <div class="row">
         <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
