@@ -23,63 +23,82 @@
                 <a href='settings.html'><img src="images/white/settings.png"/></a>
             </div>
         </section>
-        <div class="row text-center">
-            <h3><b>Weekly Schedule</b></h3>
-        </div>
         <div class="weekschedule">
-            <div class="switch">
-                <button class="switchbutton" type="button"><img src="images/white/switch.png"/>
-                </button>
-            <p>Switch between <span style="color:#c23131">day</span>/<span style="color:#316bc2">night</span> temperatures<br><b>5</b> switches left till <b>20:00</b></p>
-            </div>
             <table class="tg">
                 <tr>
-                    <th class="tg-baqh"><strong>DATE</strong></th>
-                    <th class="tg-baqh"><img src="images/white/day.png"/></th>
-                    <th class="tg-baqh"><img src="images/white/night.png"/></th>
                     <th class="tg-baqh"><img src="images/white/switch.png"/></th>
+                    <th class="tg-baqh"><img src="images/white/clock.png"/></th>
+                    <th class="tg-baqh"><img src="images/white/night.png"/></th>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>MON</strong></td>
-                    <td class="tg-baqh"><input type="text" id="monDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime1">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="monNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="monSwitch" value="20:00"></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>TUE</strong></td>
-                    <td class="tg-baqh"><input type="text" id="tueDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime2">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="tueNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="tueSwitch" value="20:00"></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>WED</strong></td>
-                    <td class="tg-baqh"><input type="text" id="wedDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime3">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="wedNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="wedSwitch" value="20:00"></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>THU</strong></td>
-                    <td class="tg-baqh"><input type="text" id="thuDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime4">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="thuNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="thuSwitch" value="20:00"></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>FRI</strong></td>
-                    <td class="tg-baqh"><input type="text" id="friDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime5">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="friNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="friSwitch" value="22:00"></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>SAT</strong></td>
-                    <td class="tg-baqh"><input type="text" id="satDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime6">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="satNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="satSwitch" value="22:00"></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><strong>SUN</strong></td>
-                    <td class="tg-baqh"><input type="text" id="sunDay" value="20.0°C"></td>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime7">
+                    </div></td>
                     <td class="tg-baqh"><input type="text" id="sunNight" value="18.0°C"></td>
-                    <td class="tg-baqh"><input type="text" id="sunSwitch" value="22:00"></td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime8">
+                    </div></td>
+                    <td class="tg-baqh"><input type="text" id="sunNight" value="18.0°C"></td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime9">
+                    </div></td>
+                    <td class="tg-baqh"><input type="text" id="sunNight" value="18.0°C"></td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh"><input type="checkbox" id="switch1"></td>
+                    <td class="tg-baqh"><div id="slidecontainer">
+                        <input type="range" min="5" max="30" value="10" step="0.1" class="slider2" id="switchTime10">
+                    </div></td>
+                    <td class="tg-baqh"><input type="text" id="sunNight" value="18.0°C"></td>
                 </tr>
             </table>
         </div>
