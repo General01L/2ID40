@@ -162,9 +162,10 @@ text-align: center;
 
 .weekschedule p{
     display: inline-block;
-    font-size: 14pt;
+    font-size: 12pt;
     padding-left:2em;
-    height: 60px;
+    margin: 0;
+
 }
 
 .switchbutton{
