@@ -1,8 +1,3 @@
-/**
- * @author HTI students, Spring 2015, adjusted by N.Stash
- *
- */
-//Change 100 to your group number
 var ServerUrl = 'http://wwwis.win.tue.nl/2id40-ws/04';
 //Backup server
 //var ServerUrl = 'http://pcwin889.win.tue.nl/2id40-ws/04';
@@ -43,7 +38,7 @@ Program[Days.Friday]    = [];
 Program[Days.Saturday]  = [];
 Program[Days.Sunday]    = [];
 
-/* Retrive day program
+/* Retreive day program
 */
 function getProgram(day) {
     return Program[day];
