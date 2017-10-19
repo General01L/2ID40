@@ -88,7 +88,7 @@ var Time;
 var CurrentDay;
 var DayTemperature;
 var NightTemperature;
-var CurrentTemperature;
+var CurrentTemperature = 4;
 var TargetTemperature;
 var ProgramState;
 
@@ -315,7 +315,8 @@ function inTemperatureBoundaries(temp) {
 }
 
 function getAll() {
-  var CurrentTemperature=get("currentTemperature", "current_temperature");
+  CurrentTemperature = get("currentTemperature", "current_temperature");
+  document.getElementById("tempNow").innerHTML = CurrentTemperature;
 }
 
 $(document).ready(getAll);
