@@ -1,6 +1,6 @@
 // Temperature sliders
-/*var sliderDay = document.getElementById("myDay");
-var outputDay = document.getElementById("day");
+var sliderDay = document.getElementById("myDay");
+var outputDay = document.getElementById("dayTemp");
 outputDay.innerHTML = sliderDay.value;
 
 sliderDay.oninput = function() {
@@ -8,7 +8,7 @@ sliderDay.oninput = function() {
 }
 
 var sliderNight = document.getElementById("myNight");
-var outputNight = document.getElementById("night");
+var outputNight = document.getElementById("nightTemp");
 outputNight.innerHTML = sliderNight.value;
 
 sliderNight.oninput = function() {
@@ -16,13 +16,13 @@ sliderNight.oninput = function() {
 }
 
 var sliderOverride = document.getElementById("myOverride");
-var outputOverride = document.getElementById("override");
+var outputOverride = document.getElementById("overrideTemp");
 outputOverride.innerHTML = sliderOverride.value;
 
 sliderOverride.oninput = function() {
     outputOverride.innerHTML = this.value;
 }
-*/
+
 // Weekly schedule
 /*
 var dayNumber = new Date().getDay(); // day of the week in numbers (1-7)
