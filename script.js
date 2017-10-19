@@ -1,5 +1,5 @@
 // Temperature sliders
-var sliderDay = document.getElementById("myDay");
+/*var sliderDay = document.getElementById("myDay");
 var outputDay = document.getElementById("day");
 outputDay.innerHTML = sliderDay.value;
 
@@ -22,7 +22,7 @@ outputOverride.innerHTML = sliderOverride.value;
 sliderOverride.oninput = function() {
     outputOverride.innerHTML = this.value;
 }
-
+*/
 // Weekly schedule
 
 var dayNumber = new Date().getDay(); // day of the week in numbers (1-7)
