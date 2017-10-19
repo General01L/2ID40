@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Thermostat</title>
+	<script src="js/cTemp.js"></script>
+	<link rel="stylesheet" href="css/thermostat.css">
+  </head>
+  <body>
+	<div style="padding:5px">
+		<div style='float:right'>
+			<script type="text/javascript">
+			<!--
+			var currentTime = new Date()
+			var hours = currentTime.getHours()
+			var minutes = currentTime.getMinutes()
+			document.write(hours+":"+minutes);
+			//-->
+			</script>
+		</div>
+
+    <h2>Current Temperature</h2>
+
+	<div><img src='images/add_button.png' width='60px'
+		onClick="plusTemp()" /></div>
+	<div id="cTemp">21 C&deg;</div>
+	<div><img src='images/minus_button.png' width='60px'
+		onClick="minTemp()"></div>
+
+	<div style='margin-top:20px;margin-bottom:20px'>
+		<input id="slider" type="range" min="10" max="30"
+		value="21" step='0.5' required
+		onchange="changeTemp('slider', 'cTemp');"></div>
+	<a href="week_overview.html">
+		<div id="week">Week overview</div>
+	</a>
+	</div>
+  </body>
+</html>
