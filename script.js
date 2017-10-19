@@ -57,3 +57,17 @@ var satSwitch = document.getElementById("thuSwitch").value;
 var sunDay = document.getElementById("sunDay").value;
 var sunNight = document.getElementById("sunNight").value;
 var sunSwitch = document.getElementById("thuSwitch").value;
+
+
+//Code for getting all data from the server
+function getAll() {
+  document.getElementById('day').innerHTML=get("day", "current_day");
+  document.getElementById('time').innerHTML=get("time", "time");
+  document.getElementById('currentTemperature').innerHTML=get("currentTemperature", "current_temperature");
+  document.getElementById('targetTemperature').innerHTML=get("targetTemperature", "target_temperature");
+  document.getElementById('dayTemperature').innerHTML=get("dayTemperature", "day_temperature");
+  document.getElementById('nightTemperature').innerHTML=get("nightTemperature", "night_temperature");
+  document.getElementById('weekProgramState').innerHTML=get("weekProgramState", "week_program_state"); 
+}
+
+$(document).ready(getAll);
