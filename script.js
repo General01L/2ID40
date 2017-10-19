@@ -24,7 +24,7 @@ sliderOverride.oninput = function() {
 }
 */
 // Weekly schedule
-
+/*
 var dayNumber = new Date().getDay(); // day of the week in numbers (1-7)
 
 
@@ -57,7 +57,7 @@ var satSwitch = document.getElementById("thuSwitch").value;
 var sunDay = document.getElementById("sunDay").value;
 var sunNight = document.getElementById("sunNight").value;
 var sunSwitch = document.getElementById("thuSwitch").value;
-
+*/
 
 //Code for getting all data from the server
 
