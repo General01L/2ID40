@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Website</title>
+    <script src='js/jquery-2.1.0.min.js'></script>
+    <script src='js/api.js'></script>
+    <style type='text/css'>
+      h2 {background-color:orange;}
+    </style>
+  </head>
+  <body>
+	<div style="padding:5px">
+		<div style='float:right'>
+			<script type="text/javascript">
+			<!--
+			var currentTime = new Date()
+			var hours = currentTime.getHours()
+			var minutes = currentTime.getMinutes()
+			document.write(hours+":"+minutes);
+			//-->
+			</script>
+
+      <script>
+        function getAll() {
+          document.getElementById('day').innerHTML=get("day", "current_day");
+          document.getElementById('time').innerHTML=get("time", "time");
+          document.getElementById('currentTemperature').innerHTML=get("currentTemperature", "current_temperature");
+          document.getElementById('targetTemperature').innerHTML=get("targetTemperature", "target_temperature");
+          document.getElementById('dayTemperature').innerHTML=get("dayTemperature", "day_temperature");
+          document.getElementById('nightTemperature').innerHTML=get("nightTemperature", "night_temperature");
+          document.getElementById('weekProgramState').innerHTML=get("weekProgramState", "week_program_state"); 
+        }
+
+        function updateAll() {
+          put("day", "current_day", "Monday");
+          document.getElementById('day').innerHTML=get("day", "current_day");
+
+          put("time", "time", "07:00");
+          document.getElementById('time').innerHTML=get("time", "time");
+
+          document.getElementById('currentTemperature').innerHTML=get("currentTemperature", "current_temperature");
+          put("targetTemperature", "target_temperature", "16.0");
+          document.getElementById('targetTemperature').innerHTML=get("targetTemperature", "target_temperature");
+
+          put("dayTemperature", "day_temperature", "22.0");
+          document.getElementById('dayTemperature').innerHTML=get("dayTemperature", "day_temperature");
+
+          put("nightTemperature", "night_temperature", "19.0");
+          document.getElementById('nightTemperature').innerHTML=get("nightTemperature", "night_temperature");
+
+          put("weekProgramState", "week_program_state", "off");
+          document.getElementById('weekProgramState').innerHTML=get("weekProgramState", "week_program_state");
+        }
+
+      </script>
+		</div>
+
+    <h2>Testing Web Service</h2>
+
+	<input id="getdata" type='button' value="GET Data" onclick="getAll();" />
+	<input id="putdata" type='button' value="PUT Data" onclick="updateAll();" />
+
+	<p>Day: <span id="day"></span></p>
+	<p>Time: <span id="time"></span></p>
+	<p>Current Temperature: <span id="currentTemperature"></span></p>
+	<p>Target Temperature: <span id="targetTemperature"></span></p>
+	<p>Day Temperature: <span id="dayTemperature"></span></p>
+	<p>Night Temperature: <span id="nightTemperature"></span></p>
+	<p>Week Program State: <span id="weekProgramState"></span></p>
+
+  <input id="addPeriod" type='button' value="Set Period" onclick="addPeriod('Monday', '12:00', '13:00');addPeriod('Monday', '13:00', '14:00');addPeriod('Monday', '07:00', '08:00');" />
+  <input id="removePeriod" type='button' value="Remove Period" onclick="removePeriod('Monday', 0)" />
+  <input type="button" value="Reset" onclick='setDefault();'>
+
+  </body>
+</html>
