@@ -315,13 +315,13 @@ function inTemperatureBoundaries(temp) {
 }
 
 function getAll() {
-  document.getElementById('day').innerHTML=get("day", "current_day");
-  document.getElementById('time').innerHTML=get("time", "time");
-  document.getElementById('currentTemperature').innerHTML=get("currentTemperature", "current_temperature");
-  document.getElementById('targetTemperature').innerHTML=get("targetTemperature", "target_temperature");
-  document.getElementById('dayTemperature').innerHTML=get("dayTemperature", "day_temperature");
-  document.getElementById('nightTemperature').innerHTML=get("nightTemperature", "night_temperature");
-  document.getElementById('weekProgramState').innerHTML=get("weekProgramState", "week_program_state"); 
+  document.getElementById('day')=get("day", "current_day");
+  document.getElementById('time')=get("time", "time");
+  document.getElementById('currentTemperature')=get("currentTemperature", "current_temperature");
+  document.getElementById('targetTemperature')=get("targetTemperature", "target_temperature");
+  document.getElementById('dayTemperature')=get("dayTemperature", "day_temperature");
+  document.getElementById('nightTemperature')=get("nightTemperature", "night_temperature");
+  document.getElementById('weekProgramState')=get("weekProgramState", "week_program_state"); 
 }
 
 $(document).ready(getAll);
