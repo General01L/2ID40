@@ -162,7 +162,7 @@ footer {
 
 .todaymenu {
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
     font-size: 18pt;
     display: inline;
     margin: 0;
@@ -170,16 +170,13 @@ footer {
 
 .todaymenu p {
     text-transform: uppercase;
-    
 }
 
 .todaymenu img {
     width: 30px;
     height: 30px;
-    margin-left: 1em;
-    margin-right: 1em;
-    
 }
+
 .slider2 {
     -webkit-appearance: none;
     width: 100%;
@@ -248,7 +245,7 @@ footer {
 }
 .tg .tg-baqh{
     text-align:center;
-    vertical-align:top;
+    vertical-align:middle;
 
     heigth: 30px;
     
@@ -257,17 +254,17 @@ footer {
     font-size: 14pt;
 }
 .tg .tg-baqh>img{
-    max-height:30px;
+    max-height:45px;
     max-width:45px;
 
     margin:0 auto;
 }
 .tg .tg-baqh>input[type=text] {
-    width: 100px;
+    width: 80px;
     height: 100%;
     
     box-sizing: border-box;
-    border-radius: 100px;
+    border-radius: 10px;
     display: inline-block;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -278,8 +275,8 @@ footer {
 }
 
 .tg .tg-baqh>input[type=checkbox] {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     vertical-align:center;
     
     display: inline-block;
