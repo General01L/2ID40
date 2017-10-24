@@ -308,7 +308,14 @@ function inTemperatureBoundaries(temp) {
 function getAll() {
   CurrentDay = get("day", "current_day");
   document.getElementById("dayNow").innerHTML = CurrentDay;
-  Time =get("time", "time");
+  
+  var scheduleStart = document.getElementById("dayNow2"); // variable in schedule
+  if (scheduleStart != null) {
+    scheduleStart.innerHTML = CurrentDay;
+  }
+  
+  
+  Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   CurrentTemperature = get("currentTemperature", "current_temperature");
   document.getElementById("tempNow").innerHTML = CurrentTemperature;

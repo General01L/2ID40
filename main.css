@@ -161,15 +161,23 @@ footer {
 }
 
 .todaymenu {
-    text-align:center;
-    vertical-align:top;
+    text-align: center;
+    vertical-align: center;
     font-size: 18pt;
     display: inline;
+    margin: 0;
+}
+
+.todaymenu p {
+    text-transform: uppercase;
+    
 }
 
 .todaymenu img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
     
 }
 .slider2 {
@@ -241,7 +249,7 @@ footer {
 .tg .tg-baqh{
     text-align:center;
     vertical-align:top;
-    width: 45px;
+
     heigth: 30px;
     
     line-height: 20px;
