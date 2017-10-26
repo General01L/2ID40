@@ -265,10 +265,10 @@ function getAll() {
       document.body.style.background = 'linear-gradient(#FFDB17 , #E8750C)' ;
   }
   else if (TargetTemperature < CurrentTemperature) {
-      document.body.style.background = 'linear-gradient(#00FFF3 , #07C9FF)' ;
+      document.body.style.background = 'linear-gradient(#00D5E8 , #175EA1)' ;
   }
   else if (TargetTemperature = CurrentTemperature) {
-      document.body.style.background = 'linear-gradient(#8EFF00 , #00FF38)' ;
+      document.body.style.background = 'linear-gradient(#3AC400 , #247A00)' ;
   }
   else {
       document.body.style.backgroundColor = 'white' ;
@@ -277,6 +277,6 @@ function getAll() {
 
 setTimeout(function(){
    window.location.reload(1);
-}, 3000);
+}, 4000);
 
 $(document).ready(getAll);
