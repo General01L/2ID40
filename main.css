@@ -9,7 +9,7 @@ body {
     font-family: Verdana, Geneva, sans-serif;
     font-weight: bold;
     font-size: 100%;
-    background: white;
+    background: grey;
     margin: 0;
     padding: 0;
 }
@@ -87,8 +87,8 @@ section .row{
 #circle {
     position: relative;
     z-index: 1;
-    width: 45%;
-    height: 50%;
+    width: 50%;
+    height: 55%;
     border-radius: 10px;
     margin: auto auto;
     padding: 2em;
