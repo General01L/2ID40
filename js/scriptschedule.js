@@ -1,45 +1,61 @@
 // Weekly schedule
 
-// Days, getting values from schedule.html
-var switch0 = document.getElementById("switch0");
-var switchTime0 = document.getElementById("switchTime0");
-var switchTime00 = document.getElementById("switchTime00");
+// getting elements from schedule.html
+
+var switch0 = document.getElementById("switch0"); //checkbox
+var switchTime0 = document.getElementById("switchTime0"); //slider from 0-24
+var textTime00 = document.getElementById("textTime0"); //textfield
+var hours0;
+var mins0;
+
+if (switchTime0 != null) {
+    hours0 = switchTime0.value;
+    mins0 = (switchTime0.value * 60) % 60;
+}
+
+function sliderVal0(newVal) {
+    hours0 = Math.floor(newVal);
+    mins0 = (newVal * 60) % 60;
+    
+    textTime0.value = hours0 + ":" + mins0;
+}
 
 var switch1 = document.getElementById("switch1");
 var switchTime1 = document.getElementById("switchTime1");
-var switchTime11 = document.getElementById("switchTime11");
+var textTime1 = document.getElementById("textTime1");
 
 var switch2 = document.getElementById("switch2");
 var switchTime2 = document.getElementById("switchTime2");
-var switchTime22 = document.getElementById("switchTime22");
+var textTime2 = document.getElementById("textTime2");
 
 var switch3 = document.getElementById("switch3");
 var switchTime3 = document.getElementById("switchTime3");
-var switchTime33 = document.getElementById("switchTime33");
+var textTime3 = document.getElementById("textTime3");
 
 var switch4 = document.getElementById("switch4");
 var switchTime4 = document.getElementById("switchTime4");
-var switchTime44 = document.getElementById("switchTime44");
+var textTime4 = document.getElementById("textTime4");
 
 var switch5 = document.getElementById("switch5");
 var switchTime5 = document.getElementById("switchTime5");
-var switchTime55 = document.getElementById("switchTime55");
+var textTime5 = document.getElementById("textTime5");
 
 var switch6 = document.getElementById("switch6");
 var switchTime6 = document.getElementById("switchTime6");
-var switchTime66 = document.getElementById("switchTime66");
+var textTime6 = document.getElementById("textTime6");
 
 var switch7 = document.getElementById("switch7");
 var switchTime7 = document.getElementById("switchTime7");
-var switchTime77 = document.getElementById("switchTime77");
+var textTime7 = document.getElementById("textTime7");
 
 var switch8 = document.getElementById("switch8");
 var switchTime8 = document.getElementById("switchTime8");
-var switchTime88 = document.getElementById("switchTime88");
+var textTime8 = document.getElementById("textTime8");
 
 var switch9 = document.getElementById("switch9");
 var switchTime9 = document.getElementById("switchTime9");
-var switchTime99 = document.getElementById("switchTime99");
+var textTime9 = document.getElementById("textTime9");
+
 
 //Code for getting all data from the server
 
