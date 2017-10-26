@@ -87,8 +87,8 @@ section .row{
 #circle {
     position: relative;
     z-index: 1;
-    width: 30%;
-    height: 30%;
+    width: 75%;
+    height: 75%;
     border-radius: 10px;
     margin: auto auto;
     padding: 2em;
