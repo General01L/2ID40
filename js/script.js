@@ -272,4 +272,8 @@ function getAll() {
   }                                                                       
 }
 
+setTimeout(function(){
+   window.location.reload(1);
+}, 5000);
+
 $(document).ready(getAll);
