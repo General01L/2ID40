@@ -256,17 +256,20 @@ function inTemperatureBoundaries(temp) {
 function getAll() {
   CurrentDay = get("day", "current_day");
   document.getElementById("dayNow").innerHTML = CurrentDay;
-  
-  var scheduleStart = document.getElementById("dayNow2"); // variable in schedule
-  if (scheduleStart != null) {
-    scheduleStart.innerHTML = CurrentDay;
-  }
-  
-  
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   CurrentTemperature = get("currentTemperature", "current_temperature");
   document.getElementById("tempNow").innerHTML = CurrentTemperature;
+  TargetTemperature = get("targetTemperature", "target_temperature");
+  if (TargetTemperature > CurrentTemperature) {
+      document.getElementById("body").style.background = linear-gradient(#FFD500, #E8740C);
+  }
+  if (TargetTemperature < CurrentTemperature) {
+      document.getElementById("body").style.background = linear-gradient(#3BD4E8, #C9E8E6);
+  }
+  if (TargetTemperature = CurrentTemperature) {
+      document.getElementById("body").style.background = linear-gradient(#C3C3C3, #8E8E8E);
+  }                                                                       
 }
 
 $(document).ready(getAll);
