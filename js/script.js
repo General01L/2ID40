@@ -263,15 +263,19 @@ function getAll() {
   TargetTemperature = get("targetTemperature", "target_temperature");
   if (TargetTemperature > CurrentTemperature) {
       document.body.style.background = 'linear-gradient(#FFDB17 , #E8750C)' ;
+      document.getElementById("message").innerHTML = "The house is getting warm and cozy!";
   }
   else if (TargetTemperature < CurrentTemperature) {
       document.body.style.background = 'linear-gradient(#00D5E8 , #175EA1)' ;
+      document.getElementById("message").innerHTML = "Hi! I am currently cooling the house down for you!";
   }
   else if (TargetTemperature = CurrentTemperature) {
       document.body.style.background = 'linear-gradient(#3AC400 , #247A00)' ;
+      document.getElementById("message").innerHTML = "Desired temperature has been achieved. Mission accomplished!";
   }
   else {
       document.body.style.backgroundColor = 'white' ;
+      document.getElementById("message").innerHTML = "Oh oh! It seems something broke! Please allow unsave scripts to be run!";
   }          
 }
 
