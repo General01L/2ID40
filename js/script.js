@@ -262,13 +262,13 @@ function getAll() {
   document.getElementById("tempNow").innerHTML = CurrentTemperature;
   TargetTemperature = get("targetTemperature", "target_temperature");
   if (TargetTemperature > CurrentTemperature) {
-      document.getElementById("body").style.background = linear-gradient(#FFD500, #E8740C);
+      document.body.style.background = linear-gradient(#FFD500, #E8740C);
   }
   if (TargetTemperature < CurrentTemperature) {
-      document.getElementById("body").style.background = linear-gradient(#3BD4E8, #C9E8E6);
+      document.body.style.background = linear-gradient(#3BD4E8, #C9E8E6);
   }
   if (TargetTemperature = CurrentTemperature) {
-      document.getElementById("body").style.background = linear-gradient(#C3C3C3, #8E8E8E);
+      document.body.style.background = linear-gradient(#C3C3C3, #8E8E8E);
   }                                                                       
 }
 
