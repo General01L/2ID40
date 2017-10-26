@@ -264,12 +264,15 @@ function getAll() {
   if (TargetTemperature > CurrentTemperature) {
       document.body.style.backgroundColor = 'red' ;
   }
-  if (TargetTemperature < CurrentTemperature) {
+  else if (TargetTemperature < CurrentTemperature) {
       document.body.style.backgroundColor = 'blue' ;
   }
-  if (TargetTemperature = CurrentTemperature) {
+  else if (TargetTemperature = CurrentTemperature) {
       document.body.style.backgroundColor = 'green' ;
-  }                                                                       
+  }
+  else {
+      document.body.style.backgroundColor = 'pink' ;
+  }          
 }
 
 setTimeout(function(){
