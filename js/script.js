@@ -280,7 +280,7 @@ function getAll() {
 }
 
 setTimeout(function(){
-   window.location.reload(1);
+   window.location.reload(true);
 }, 4000);
 
 $(document).ready(getAll);
