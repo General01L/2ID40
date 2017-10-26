@@ -1,28 +1,45 @@
 // Weekly schedule
 
-var dayNumber = new Date().getDay(); // day of the week in numbers (1-7)
 // Days, getting values from schedule.html
-var monDay = document.getElementById("monDay").value;
-var monNight = document.getElementById("monNight").value;
-var monSwitch = document.getElementById("thuSwitch").value;
-var tueDay = document.getElementById("tueDay").value;
-var tueNight = document.getElementById("tueNight").value;
-var tueSwitch = document.getElementById("thuSwitch").value;
-var wedDay = document.getElementById("wedDay").value;
-var wedNight = document.getElementById("wedNight").value;
-var wedSwitch = document.getElementById("thuSwitch").value;
-var thuDay = document.getElementById("thuDay").value;
-var thuNight = document.getElementById("thuNight").value;
-var thuSwitch = document.getElementById("thuSwitch").value;
-var friDay = document.getElementById("friDay").value;
-var friNight = document.getElementById("friNight").value;
-var friSwitch = document.getElementById("thuSwitch").value;
-var satDay = document.getElementById("satDay").value;
-var satNight = document.getElementById("satNight").value;
-var satSwitch = document.getElementById("thuSwitch").value;
-var sunDay = document.getElementById("sunDay").value;
-var sunNight = document.getElementById("sunNight").value;
-var sunSwitch = document.getElementById("thuSwitch").value;
+var switch0 = document.getElementById("switch0");
+var switchTime0 = document.getElementById("switchTime0");
+var switchTime00 = document.getElementById("switchTime00");
+
+var switch1 = document.getElementById("switch1");
+var switchTime1 = document.getElementById("switchTime1");
+var switchTime11 = document.getElementById("switchTime11");
+
+var switch2 = document.getElementById("switch2");
+var switchTime2 = document.getElementById("switchTime2");
+var switchTime22 = document.getElementById("switchTime22");
+
+var switch3 = document.getElementById("switch3");
+var switchTime3 = document.getElementById("switchTime3");
+var switchTime33 = document.getElementById("switchTime33");
+
+var switch4 = document.getElementById("switch4");
+var switchTime4 = document.getElementById("switchTime4");
+var switchTime44 = document.getElementById("switchTime44");
+
+var switch5 = document.getElementById("switch5");
+var switchTime5 = document.getElementById("switchTime5");
+var switchTime55 = document.getElementById("switchTime55");
+
+var switch6 = document.getElementById("switch6");
+var switchTime6 = document.getElementById("switchTime6");
+var switchTime66 = document.getElementById("switchTime66");
+
+var switch7 = document.getElementById("switch7");
+var switchTime7 = document.getElementById("switchTime7");
+var switchTime77 = document.getElementById("switchTime77");
+
+var switch8 = document.getElementById("switch8");
+var switchTime8 = document.getElementById("switchTime8");
+var switchTime88 = document.getElementById("switchTime88");
+
+var switch9 = document.getElementById("switch9");
+var switchTime9 = document.getElementById("switchTime9");
+var switchTime99 = document.getElementById("switchTime99");
 
 //Code for getting all data from the server
 
@@ -281,7 +298,11 @@ function inTemperatureBoundaries(temp) {
 
 function getAll() {
   CurrentDay = get("day", "current_day");
-  document.getElementById("dayNow").innerHTML = CurrentDay;
+  
+  var todayDay = document.getElementById("dayNow");
+  if (todayDay != null) {
+    todayDay.innerHTML = CurrentDay;
+  }
   
   var scheduleStart = document.getElementById("dayNow2"); // variable in schedule
   if (scheduleStart != null) {
