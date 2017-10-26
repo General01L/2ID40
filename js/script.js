@@ -262,13 +262,13 @@ function getAll() {
   document.getElementById("tempNow").innerHTML = CurrentTemperature;
   TargetTemperature = get("targetTemperature", "target_temperature");
   if (TargetTemperature > CurrentTemperature) {
-      document.body.style.backgroundColor = red ;
+      document.body.style.backgroundColor = 'red' ;
   }
   if (TargetTemperature < CurrentTemperature) {
-      document.body.style.backgroundColor = blue;
+      document.body.style.backgroundColor = 'blue' ;
   }
   if (TargetTemperature = CurrentTemperature) {
-      document.body.style.backgroundColor = green;
+      document.body.style.backgroundColor = 'green' ;
   }                                                                       
 }
 
