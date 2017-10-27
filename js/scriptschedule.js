@@ -144,6 +144,164 @@ function setSliders(){
 
     // ----------
     
+    var time2 = (document.getElementById("textTime2").value).replace(":", "").replace(".", "");
+    
+    if (time2.length == 4) {
+        var hours = parseInt(time2.substring(0, 2));
+        var mins = parseInt(time2.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime2").value = hours + mins;
+    } else if (time2.length == 3) {
+        var hours = parseInt(time2.substring(0, 1));
+        var mins = parseInt(time2.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime2").value = hours + mins;
+    } else if (time2.length < 3 && time2.length > 0) {
+        var hours = time2;
+        
+        document.getElementById("sliderTime2").value = hours;
+    }
+    
+    // ----------
+    
+    var time3 = (document.getElementById("textTime3").value).replace(":", "").replace(".", "");
+    
+    if (time3.length == 4) {
+        var hours = parseInt(time3.substring(0, 2));
+        var mins = parseInt(time3.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime3").value = hours + mins;
+    } else if (time3.length == 3) {
+        var hours = parseInt(time3.substring(0, 1));
+        var mins = parseInt(time3.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime3").value = hours + mins;
+    } else if (time3.length < 3 && time3.length > 0) {
+        var hours = time3;
+        
+        document.getElementById("sliderTime3").value = hours;
+    }
+    
+    // ----------
+    
+    var time4 = (document.getElementById("textTime4").value).replace(":", "").replace(".", "");
+    
+    if (time4.length == 4) {
+        var hours = parseInt(time4.substring(0, 2));
+        var mins = parseInt(time4.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime4").value = hours + mins;
+    } else if (time4.length == 3) {
+        var hours = parseInt(time4.substring(0, 1));
+        var mins = parseInt(time4.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime4").value = hours + mins;
+    } else if (time4.length < 3 && time4.length > 0) {
+        var hours = time4;
+        
+        document.getElementById("sliderTime4").value = hours;
+    }
+    
+    // ----------
+    
+    var time5 = (document.getElementById("textTime5").value).replace(":", "").replace(".", "");
+    
+    if (time5.length == 4) {
+        var hours = parseInt(time5.substring(0, 2));
+        var mins = parseInt(time5.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime5").value = hours + mins;
+    } else if (time5.length == 3) {
+        var hours = parseInt(time5.substring(0, 1));
+        var mins = parseInt(time5.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime5").value = hours + mins;
+    } else if (time5.length < 3 && time5.length > 0) {
+        var hours = time5;
+        
+        document.getElementById("sliderTime5").value = hours;
+    }
+    
+    // ----------
+    
+    var time6 = (document.getElementById("textTime6").value).replace(":", "").replace(".", "");
+    
+    if (time6.length == 4) {
+        var hours = parseInt(time6.substring(0, 2));
+        var mins = parseInt(time6.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime6").value = hours + mins;
+    } else if (time6.length == 3) {
+        var hours = parseInt(time6.substring(0, 1));
+        var mins = parseInt(time6.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime6").value = hours + mins;
+    } else if (time6.length < 3 && time6.length > 0) {
+        var hours = time6;
+        
+        document.getElementById("sliderTime6").value = hours;
+    }
+    
+    // ----------
+    
+    var time7 = (document.getElementById("textTime7").value).replace(":", "").replace(".", "");
+    
+    if (time7.length == 4) {
+        var hours = parseInt(time7.substring(0, 2));
+        var mins = parseInt(time7.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime7").value = hours + mins;
+    } else if (time7.length == 3) {
+        var hours = parseInt(time7.substring(0, 1));
+        var mins = parseInt(time7.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime7").value = hours + mins;
+    } else if (time7.length < 3 && time7.length > 0) {
+        var hours = time7;
+        
+        document.getElementById("sliderTime7").value = hours;
+    }
+    
+    // ----------
+    
+    var time8 = (document.getElementById("textTime8").value).replace(":", "").replace(".", "");
+    
+    if (time8.length == 4) {
+        var hours = parseInt(time8.substring(0, 2));
+        var mins = parseInt(time8.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime8").value = hours + mins;
+    } else if (time8.length == 3) {
+        var hours = parseInt(time8.substring(0, 1));
+        var mins = parseInt(time8.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime8").value = hours + mins;
+    } else if (time8.length < 3 && time8.length > 0) {
+        var hours = time8;
+        
+        document.getElementById("sliderTime8").value = hours;
+    }
+    
+    // ----------
+    
+    var time9 = (document.getElementById("textTime9").value).replace(":", "").replace(".", "");
+    
+    if (time9.length == 4) {
+        var hours = parseInt(time9.substring(0, 2));
+        var mins = parseInt(time9.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime9").value = hours + mins;
+    } else if (time9.length == 3) {
+        var hours = parseInt(time9.substring(0, 1));
+        var mins = parseInt(time9.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime9").value = hours + mins;
+    } else if (time9.length < 3 && time9.length > 0) {
+        var hours = time9;
+        
+        document.getElementById("sliderTime9").value = hours;
+    }
+    
     showValue();
 }
 
