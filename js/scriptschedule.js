@@ -1,11 +1,6 @@
 // Weekly schedule
 
-// getting elements from schedule.html
-
-var switch0 = document.getElementById("switch0"); //checkbox
-var sliderTime0 = document.getElementById("sliderTime0"); //slider from 0-24
-var textTime0 = document.getElementById("textTime0"); //textfield
-
+// shows all the values in textboxes when the slider changes
 function showValue() {
     var hours0 = Math.floor(document.getElementById("sliderTime0").value);
     var mins0 = (document.getElementById("sliderTime0").value * 60) % 60;
@@ -73,7 +68,7 @@ function showValue() {
     hours6 = ("0" + hours6).slice(-2);
     mins6 = ("0" + mins6).slice(-2);
     
-    document.getElementById("textTime5").value = hours6 + ":" + mins6;
+    document.getElementById("textTime6").value = hours6 + ":" + mins6;
     
     // ----------
     
@@ -105,10 +100,45 @@ function showValue() {
     
     document.getElementById("textTime9").value = hours9 + ":" + mins9;
     
+}
+
+// change sliders accordingly to the textbox values
+function setSliders(){
+    document.getElementById("sliderTime0").value = document.getElementById("textTime0").value;
     // ----------
+    
+    document.getElementById("sliderTime1").value = document.getElementById("textTime1").value;
+    // ----------
+    
+    document.getElementById("sliderTime2").value = document.getElementById("textTime2").value;
+    // ----------
+    
+    document.getElementById("sliderTime3").value = document.getElementById("textTime3").value;
+    // ----------
+    
+    document.getElementById("sliderTime4").value = document.getElementById("textTime4").value;
+    // ----------
+    
+    document.getElementById("sliderTime5").value = document.getElementById("textTime5").value;
+    // ----------
+    
+    document.getElementById("sliderTime6").value = document.getElementById("textTime6").value;
+    // ----------
+    
+    document.getElementById("sliderTime7").value = document.getElementById("textTime7").value;
+    // ----------
+    
+    document.getElementById("sliderTime8").value = document.getElementById("textTime8").value;
+    // ----------
+    
+    document.getElementById("sliderTime9").value = document.getElementById("textTime9").value;
 }
 
 // --------
+
+var switch0 = document.getElementById("switch0");
+var sliderTime0 = document.getElementById("sliderTime0");
+var textTime0 = document.getElementById("textTime0");
 
 var switch1 = document.getElementById("switch1");
 var sliderTime1 = document.getElementById("sliderTime1");
