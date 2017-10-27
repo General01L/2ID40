@@ -104,34 +104,47 @@ function showValue() {
 
 // change sliders accordingly to the textbox values
 function setSliders(){
-    document.getElementById("sliderTime0").value = document.getElementById("textTime0").value;
+    var time0 = (document.getElementById("textTime0").value).replace(":", "").replace(".", "");
+    
+    if (time0.length == 4) {
+        var hours = parseInt(time0.substring(0, 2));
+        var mins = parseInt(time0.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime0").value = hours + mins;
+    } else if (time0.length == 3) {
+        var hours = parseInt(time0.substring(0, 1));
+        var mins = parseInt(time0.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime0").value = hours + mins;
+    } else if (time0.length < 3 && time0.length > 0) {
+        var hours = time0;
+        
+        document.getElementById("sliderTime0").value = hours;
+    }
+
     // ----------
     
-    document.getElementById("sliderTime1").value = document.getElementById("textTime1").value;
+    var time1 = (document.getElementById("textTime1").value).replace(":", "").replace(".", "");
+    
+    if (time1.length == 4) {
+        var hours = parseInt(time1.substring(0, 2));
+        var mins = parseInt(time1.substring(2, 4))/60;
+        
+        document.getElementById("sliderTime1").value = hours + mins;
+    } else if (time1.length == 3) {
+        var hours = parseInt(time1.substring(0, 1));
+        var mins = parseInt(time1.substring(1, 3))/60;
+        
+        document.getElementById("sliderTime1").value = hours + mins;
+    } else if (time1.length < 3 && time1.length > 0) {
+        var hours = time1;
+        
+        document.getElementById("sliderTime1").value = hours;
+    }
+
     // ----------
     
-    document.getElementById("sliderTime2").value = document.getElementById("textTime2").value;
-    // ----------
-    
-    document.getElementById("sliderTime3").value = document.getElementById("textTime3").value;
-    // ----------
-    
-    document.getElementById("sliderTime4").value = document.getElementById("textTime4").value;
-    // ----------
-    
-    document.getElementById("sliderTime5").value = document.getElementById("textTime5").value;
-    // ----------
-    
-    document.getElementById("sliderTime6").value = document.getElementById("textTime6").value;
-    // ----------
-    
-    document.getElementById("sliderTime7").value = document.getElementById("textTime7").value;
-    // ----------
-    
-    document.getElementById("sliderTime8").value = document.getElementById("textTime8").value;
-    // ----------
-    
-    document.getElementById("sliderTime9").value = document.getElementById("textTime9").value;
+    showValue();
 }
 
 // --------
