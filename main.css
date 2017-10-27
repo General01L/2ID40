@@ -160,19 +160,31 @@ footer {
     
 }
 
-.todaymenu {
-    text-align: center;
-    vertical-align: middle;
+#todaymenu {
     font-size: 18pt;
-    display: inline;
-    margin: 0;
+    margin: 5px 1px;
+    padding: 10px 25%;
 }
 
-.todaymenu p {
+#todaymenu p {
     text-transform: uppercase;
 }
 
-.todaymenu img {
+#todaymenu button {
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#todaymenu button:hover {
+    background: #ccc;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#todaymenu img {
     width: 30px;
     height: 30px;
 }
