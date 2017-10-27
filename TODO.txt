@@ -1,0 +1,5 @@
+Schedule page:
+- let the user be able to loop through the days ( buttons are already there, with onClick function attached )
+- wire the checkboxes to enable/disable switches
+- make the schedule put the values onto the server
+- make the schedule get the values from the server onload
