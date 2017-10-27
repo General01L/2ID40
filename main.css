@@ -161,6 +161,9 @@ footer {
 }
 
 #todaymenu {
+    float: none;
+    text-align:center;
+
     font-size: 24pt;
     padding: 0px 10%;
 }
@@ -170,17 +173,15 @@ footer {
 }
 
 #todaymenu button {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.5);;
     border: 0;
     border-radius: 20px;
     padding: 5px;
+    margin-top:5px;
 }
 
 #todaymenu button:hover {
-    background: #ccc;
-    border: 0;
-    border-radius: 20px;
-    padding: 5px;
+    background: rgba(255, 255, 255, 0.7);;
 }
 
 #todaymenu img {

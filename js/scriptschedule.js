@@ -1,4 +1,5 @@
 // Weekly schedule
+var scheduleDay;
 
 // shows all the values in textboxes when the slider changes
 function showValue() {
@@ -307,6 +308,17 @@ function setSliders(){
 
 // --------
 
+function weekLoopPrev(){
+    scheduleDay = Days[Days.indexOf(scheduleDay) - 1];
+    scheduleStart.innerHTML = dayThis;
+    
+}
+
+function weekLoopNext(){
+    scheduleStart.innerHTML = "monday";
+    
+}
+
 var switch0 = document.getElementById("switch0");
 var sliderTime0 = document.getElementById("sliderTime0");
 var textTime0 = document.getElementById("textTime0");
@@ -605,13 +617,14 @@ function inTemperatureBoundaries(temp) {
 
 function getAll() {
     CurrentDay = get("day", "current_day");
+    scheduleDay = CurrentDay;
     
     var todayDay = document.getElementById("dayNow");
     if (todayDay != null) {
         todayDay.innerHTML = CurrentDay;
     }
     
-    var scheduleStart = document.getElementById("scheduleDay"); // variable in schedule
+    var scheduleStart = document.getElementById("scheduleDay");
     if (scheduleStart != null) {
         scheduleStart.innerHTML = CurrentDay;
     }
