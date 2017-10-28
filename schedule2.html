@@ -1,53 +1,63 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>2ID40 Schedule</title>
-        <meta charset="utf-8" />
+  <head>
+    <title>2ID40 Schedule</title>
+      <meta charset="utf-8" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
   <script src='js/jquery-2.1.0.min.js'></script>
-  <script src='js/scriptschedule.js'></script>
+  <script src='js/scriptschedule2.js'></script>
     <body onload="getAll()">
-        <header class="container">
-            <div class="row text-center">
-                <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
-            </div>
-        </header>
-        <div class="container">
-          <div class="row text center>
-            <div class="col-sm-6 text-right">
-              <select class="daySelector">
-                <option value="SchedMon">Monday</option>
-                <option value="SchedTue">Tuesday</option>
-                <option value="SchedWed">Wednesday</option>
-                <option value="SchedThu">Thursday</option>
-                <option value="SchedFri">Friday</option>
-                <option value="SchedSat">Saturday</option>
-                <option value="SchedSun">Sunday</option>
-              </select>
-            </div>
-            <div class="col-sm-6 text-left">
-              <select class="switchType">
-                <option value="dayNight">From day to night temperature</option>
-                <option value="NightDay">From night to day temperature</option>
-              </select>
-            </div>
+      <header class="container">
+        <div class="row text-center">
+          <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row text center>
+          <div class="col-sm-6 text-right">
+            <select class="daySelector">
+              <option value="SchedMon">Monday</option>
+              <option value="SchedTue">Tuesday</option>
+              <option value="SchedWed">Wednesday</option>
+              <option value="SchedThu">Thursday</option>
+              <option value="SchedFri">Friday</option>
+              <option value="SchedSat">Saturday</option>
+              <option value="SchedSun">Sunday</option>
+            </select>
+          </div>
+          <div class="col-sm-6 text-left">
+            <select class="switchType">
+              <option value="dayNight">From day to night temperature</option>
+              <option value="NightDay">From night to day temperature</option>
+            </select>
           </div>
         </div>
-        <section class="controlbar">
-            <div class="row text-center">           
-                <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
-                <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
-                <a href='schedule.html'><img src="images/white/calendar.png"/></a>
-                <a href='weather.html'><img src="images/white/weather.png"/></a>
-                <a href='settings.html'><img src="images/white/settings.png"/></a>
-            </div>
-        </section>
-        <footer>
-            <div class="row">
-                <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
-            </div>
-        </footer>
-    </body>
+          <div class="row text-center">
+          <ul>
+            <li><p>Here is a list of your current settings for the chosen day and temperature switch. For each switch the time can be changed. Select the on or off button to turn a switch on or off.</p></li>
+            <li><span id="time1"></span><p> , </p><span id="switch1"></span></li>
+            <li><span id="time2"></span><p> , </p><span id="switch2"></span></li>
+            <li><span id="time3"></span><p> , </p><span id="switch3"></span></li>
+            <li><span id="time4"></span><p> , </p><span id="switch4"></span></li>
+            <li><span id="time5"></span><p> , </p><span id="switch5"></span>></li>
+          </ul>
+      </div>
+    </div>
+    <section class="controlbar">
+      <div class="row text-center">           
+        <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
+        <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
+        <a href='schedule.html'><img src="images/white/calendar.png"/></a>
+        <a href='weather.html'><img src="images/white/weather.png"/></a>
+        <a href='settings.html'><img src="images/white/settings.png"/></a>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
+      </div>
+    </footer>
+  </body>
 </html>
