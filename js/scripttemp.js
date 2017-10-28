@@ -291,6 +291,7 @@ function getAll() {
   Time =get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   DayTemperature = get("dayTemperature", "day_temperature");
+  document.getElementById("").innerHTML = CurrentDay;  
   outputDay.innerHTML = DayTemperature;
   NightTemperature = get("nightTemperature", "night_temperature");
   outputNight.innerHTML = NightTemperature;
