@@ -18,7 +18,7 @@
           <p>Welcome to the settings page here you can change the systems day and time. You can also enable the Vacation mode here. The Vacation mode will permanently turn off the systems weekly schedule until you return from your vacation.</p>
         </div>
       </div>
-      <div class="row text center">
+      <div class="row text-center">
         <div class="col-sm-12">
           <p>Select system day.</p>
           <select id="daySelector">
@@ -40,6 +40,15 @@
             <input type="time" name="usr_time" value="00:00" id="newTime">
             <button onclick="setSystemTime()">Apply</button>
           </form>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <p>Turn vacation mode on/off.</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
         </div>
       </div>
     </div>       
