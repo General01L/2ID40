@@ -269,6 +269,7 @@ setTimeout(function(){
 //apply server day button
 function setSystemDay() {
     CurrentDay = document.getElementById("daySelector");
+    document.getElementById("dayNow").innerHTML = CurrentDay; 
     put("day", "current_day", CurrentDay);
 }
 
