@@ -270,14 +270,14 @@ setTimeout(function(){
 function setSystemDay() {
     CurrentDay = document.getElementById("daySelector").value;
     document.getElementById("dayNow").innerHTML = CurrentDay; 
-    //put("day", "current_day", CurrentDay);
+    put("day", "current_day", CurrentDay);
 }
 
 //apply server time button
 function setSystemTime() {
     Time = document.getElementById("newTime").value;
     document.getElementById("timeNow").innerHTML = Time; 
-    //put("time", "time", Time);
+    put("time", "time", Time);
 }
 
 $(document).ready(getAll);
