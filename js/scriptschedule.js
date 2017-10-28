@@ -631,8 +631,6 @@ function getAll() {
 
     Time = get("time", "time");
     document.getElementById("timeNow").innerHTML = Time;
-    CurrentTemperature = get("currentTemperature", "current_temperature");
-    document.getElementById("tempNow").innerHTML = CurrentTemperature;
 }
 
 $(document).ready(getAll);
