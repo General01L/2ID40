@@ -269,6 +269,7 @@ setTimeout(function(){
 //apply server day button
 function setSystemDay() {
     CurrentDay = document.getElementById("daySelector");
+    CurrentDayValue = CurrentDay.value;
     document.getElementById("dayNow").innerHTML = CurrentDay; 
     //put("day", "current_day", CurrentDay);
 }
@@ -276,6 +277,7 @@ function setSystemDay() {
 //apply server time button
 function setSystemTime() {
     Time = document.getElementById("newTime");
+    TimeValue = Time.value;
     document.getElementById("timeNow").innerHTML = Time; 
     //put("time", "time", Time);
 }
