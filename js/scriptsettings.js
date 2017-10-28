@@ -266,4 +266,16 @@ setTimeout(function(){
 }, 4000);
 */
 
+//apply server day button
+function setSystemDay() {
+    CurrentDay = document.getElementById("daySelector").innerhtml;
+    put("currentDay", "current_Day", CurrentDay);
+}
+
+//apply server time button
+function setSystemTime() {
+    Time = document.getElementById("newTime").innerhtml;
+    put("time", "time", Time);
+}
+
 $(document).ready(getAll);
