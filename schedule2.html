@@ -15,16 +15,26 @@
             </div>
         </header>
         <div class="container">
-            <div class="row text-center">
-                <select class="daySelector">
-                    <option value="SchedMon">Monday</option>
-                    <option value="SchedTue">Tuesday</option>
-                    <option value="SchedWed">Wednesday</option>
-                    <option value="SchedThu">Thursday</option>
-                    <option value="SchedFri">Friday</option>
-                    <option value="SchedSat">Saturday</option>
-                    <option value="SchedSun">Sunday</option>
-                </select>
+          <div class="row text center>
+            <div class="col-sm-6 text-right">
+              <select class="daySelector">
+                <option value="SchedMon">Monday</option>
+                <option value="SchedTue">Tuesday</option>
+                <option value="SchedWed">Wednesday</option>
+                <option value="SchedThu">Thursday</option>
+                <option value="SchedFri">Friday</option>
+                <option value="SchedSat">Saturday</option>
+                <option value="SchedSun">Sunday</option>
+              </select>
+            </div>
+            <div class="col-sm-6 text-left">
+              <select class="switchType">
+                <option value="dayNight">From day to night temperature</option>
+                <option value="NightDay">From night to day temperature</option>
+              </select>
+            </div>
+          </div>
+        </div>
         <section class="controlbar">
             <div class="row text-center">           
                 <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
