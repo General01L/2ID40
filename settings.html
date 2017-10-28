@@ -12,6 +12,36 @@
         <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
       </div>
     </header>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <h2>Welcome to the settings page here you can change the systems day and time. You can also enable the Vacation mode here. The Vacation mode will permanently turn off the systems weekly schedule until you return from your vacation.</h2>
+        </div>
+      </div>
+      <div class="row text center">
+        <div class="col-sm-12">
+          <select class="daySelector">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+          <button onclick="setSystemDay()">Apply</button>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <p>Change system time.</p>
+          <form action="/action_page.php">
+            <input type="time" name="usr_time" id="newTime">
+            <button onclick="setSystemTime()">Apply</button>
+          </form>
+        </div>
+      </div>
+    </div>       
     <section class="controlbar">
       <div class="row text-center">           
         <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
