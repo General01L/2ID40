@@ -30,6 +30,7 @@ var NightTemperature;
 var CurrentTemperature;
 var TargetTemperature;
 var ProgramState;
+var vacationMode;
 
 var Program = {};
 Program[Days.Monday]    = [];
@@ -257,7 +258,14 @@ function getAll() {
   CurrentDay = get("day", "current_day");
   document.getElementById("dayNow").innerHTML = CurrentDay;
   Time = get("time", "time");
-  document.getElementById("timeNow").innerHTML = Time;       
+  document.getElementById("timeNow").innerHTML = Time;
+  ProgramState = get("weekprogramstate", "week_program_state");
+  if (ProgramState == "On") {
+      document.getElementById("vacationMode").checked = true;
+  }
+  else {
+      document.getElementById("vacationMode").checked = false;
+  }
 }
 
 
