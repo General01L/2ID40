@@ -268,13 +268,13 @@ setTimeout(function(){
 
 //apply server day button
 function setSystemDay() {
-    CurrentDay = document.getElementById("daySelector").innerhtml;
+    CurrentDay = document.getElementById("daySelector").innerHTML;
     put("currentDay", "current_Day", CurrentDay);
 }
 
 //apply server time button
 function setSystemTime() {
-    Time = document.getElementById("newTime").innerhtml;
+    Time = document.getElementById("newTime").innerHTML;
     put("time", "time", Time);
 }
 
