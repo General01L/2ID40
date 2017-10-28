@@ -260,11 +260,11 @@ function getAll() {
   document.getElementById("timeNow").innerHTML = Time;       
 }
 
-/*
+
 setTimeout(function(){
    window.location.reload(true);
-}, 4000);
-*/
+}, 20000);
+
 
 //apply server day button
 function setSystemDay() {
