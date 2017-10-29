@@ -283,8 +283,8 @@ function getAll() {
   }          
 }
 
-setTimeout(function(){
-   window.location.reload(true);
-}, 4000);
+setInterval(function(){ 
+    getAll(); 
+}, 500);
 
 $(document).ready(getAll);
