@@ -1,56 +1,54 @@
 <!DOCTYPE>
 <html>
-  <head>
-    <title>2ID40 Thermostat</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Temperature/temperaturestyle.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  <body>
-    <header class="container">
-      <div class="row text-center">
-        <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
-      </div>
-    </header>
-    <section class="container">
-      <div class="dis text-center">
-        <h3><img src="images/thermostat_hot.png" style="margin-right:1em"/><b>DAY: <span id="dayTemp"></span>°C</b></h3>
-        <div id="slidecontainer">
-          <input type="range" min="5" max="30" step="0.1" class="slider" id="myDay">
+    <head>
+        <title>2ID40 Thermostat</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Temperature/temperaturestyle.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <header>
+            <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
+        </header>
+        <section class="container">
+            <div class="dis text-center">
+                <h3><img src="images/thermostat_hot.png" style="margin-right:1em"/><b>DAY: <span id="dayTemp"></span>°C</b></h3>
+                <div id="slidecontainer">
+                    <input type="range" min="5" max="30" step="0.1" class="slider" id="myDay">
+                </div>
+            </div>
+            <div class="dis text-center">
+                <h3><img src="images/thermostat_cold.png" style="margin-right:1em"/><b>NIGHT: <span id="nightTemp"></span>°C</b></h3>
+                <div id="slidecontainer">
+                    <input type="range" min="5" max="30" step="0.1" class="slider" id="myNight">
+                </div>
+            </div>
+            <div class="dis text-center">
+                <h3><img src="images/thermostat.png" style="margin-right:1em"/><b>OVERRIDE: <span id="overrideTemp"></span>°C</b></h3>
+            </div>
+            <div id="slidecontainer">
+                <input type="range" min="5" max="30" step="0.1" class="slider" id="myOverride">
+            </div>
         </div>
-      </div>
-      <div class="dis text-center">
-        <h3><img src="images/thermostat_cold.png" style="margin-right:1em"/><b>NIGHT: <span id="nightTemp"></span>°C</b></h3>
-        <div id="slidecontainer">
-          <input type="range" min="5" max="30" step="0.1" class="slider" id="myNight">
-        </div>
-      </div>
-      <div class="dis text-center">
-        <h3><img src="images/thermostat.png" style="margin-right:1em"/><b>OVERRIDE: <span id="overrideTemp"></span>°C</b></h3>
-        </div>
-        <div id="slidecontainer">
-          <input type="range" min="5" max="30" step="0.1" class="slider" id="myOverride">
-        </div>
-      </div>
     </section>
     <section class="controlbar">
-      <div class="row text-center">           
-        <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
-        <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
-        <a href='schedule.html'><img src="images/white/calendar.png"/></a>
-        <a href='settings.html'><img src="images/white/settings.png"/></a>
-      </div>
+        <div class="row text-center">           
+            <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
+            <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
+            <a href='schedule.html'><img src="images/white/calendar.png"/></a>
+            <a href='settings.html'><img src="images/white/settings.png"/></a>
+        </div>
     </section>
     <div class="housecontainer text-center">
-      <img src="images/house.png"/>
+        <img src="images/house.png"/>
     </div>
     <footer>
-      <div class="row">
-        <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
-      </div>
+        <div class="row">
+            <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
+        </div>
     </footer>
-  </body>
-  <script src='js/jquery-2.1.0.min.js'></script>
-  <script src='Temperature/scripttemp.js'></script>
+</body>
+<script src='js/jquery-2.1.0.min.js'></script>
+<script src='Temperature/scripttemp.js'></script>
 </html>

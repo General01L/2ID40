@@ -7,13 +7,11 @@
         <link rel="stylesheet" type="text/css" href="Schedule/schedulestyle.css">
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
-  <script src='js/jquery-2.1.0.min.js'></script>
-  <script src='Schedule/scriptschedule.js'></script>
+    <script src='js/jquery-2.1.0.min.js'></script>
+    <script src='Schedule/scriptschedule.js'></script>
     <body onload="getAll()">
-        <header class="container">
-            <div class="row text-center">
-                <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
-            </div>
+        <header>
+            <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
         </header>
         <div class="weekschedule">
             <div id="todaymenu" class="text-center">
@@ -50,82 +48,83 @@
                     <td class="tg-baqh"><input type="text" id="textTime1" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch2"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="8" step="0.01" class="slider2" id="sliderTime2" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime2" value="00:00" onchange="setSliders()"/></td>
+                <td class="tg-baqh"><input type="checkbox" id="switch2"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="8" step="0.01" class="slider2" id="sliderTime2" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime2" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch3"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="8" step="0.01" class="slider2" id="sliderTime3" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime3" value="00:00" onchange="setSliders()"/></td>
+                <td class="tg-baqh"><input type="checkbox" id="switch3"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="8" step="0.01" class="slider2" id="sliderTime3" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime3" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch4"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="8" step="0.01" class="slider2" id="sliderTime4" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime4" value="00:00" onchange="setSliders()"/></td>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                    <td class="row text-center"><p><b>NIGHT TO DAY</b></P></td>
+                <td class="tg-baqh"><input type="checkbox" id="switch4"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="8" step="0.01" class="slider2" id="sliderTime4" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime4" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch5"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime5" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime5" value="00:00" onchange="setSliders()"/></td>
+                <td class="row text-center"><p><b>NIGHT TO DAY</b></P></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch6"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime6" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime6" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch7"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime7" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime7" value="00:00" onchange="setSliders()"/></td>
+                <td class="tg-baqh"><input type="checkbox" id="switch5"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime5" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime5" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch8"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime8" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime8" value="00:00" onchange="setSliders()"/></td>
+                <td class="tg-baqh"><input type="checkbox" id="switch6"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime6" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime6" value="00:00" onchange="setSliders()"/></td>
                 </tr>
                 <tr>
-                    <td class="tg-baqh"><input type="checkbox" id="switch9"></td>
-                    <td class="tg-baqh"><div id="slidecontainer">
-                        <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime9" oninput="showValue()"/>
-                    </div></td>
-                    <td class="tg-baqh"><input type="text" id="textTime9" value="00:00" onchange="setSliders()"/></td>
+                <td class="tg-baqh"><input type="checkbox" id="switch7"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime7" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime7" value="00:00" onchange="setSliders()"/></td>
                 </tr>
-            </table>
-        </div>
-        <section class="controlbar">
-            <div class="row text-center">           
+                <tr>
+                <td class="tg-baqh"><input type="checkbox" id="switch8"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime8" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime8" value="00:00" onchange="setSliders()"/></td>
+                </tr>
+                <tr>
+                <td class="tg-baqh"><input type="checkbox" id="switch9"></td>
+                <td class="tg-baqh"><div id="slidecontainer">
+                <input type="range" min="0" max="23" value="18" step="0.01" class="slider3" id="sliderTime9" oninput="showValue()"/>
+                </div></td>
+                <td class="tg-baqh"><input type="text" id="textTime9" value="00:00" onchange="setSliders()"/></td>
+                </tr>
+                </table>
+                </div>
+                <section class="controlbar">
+                <div class="row text-center">           
                 <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
                 <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
                 <a href='schedule.html'><img src="images/white/calendar.png"/></a>
                 <a href='settings.html'><img src="images/white/settings.png"/></a>
-            </div>
-        </section>
-        <footer>
-            <div class="row">
+                </div>
+                </section>
+                <footer>
+                <div class="row">
                 <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
-            </div>
-        </footer>
-    </body>
-</html>
+                </div>
+                </footer>
+                </body>
+                </html>
+                                

@@ -10,18 +10,19 @@ body {
     font-weight: bold;
     font-size: 100%;
     background: grey;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 header h1 {
-  font-size: 32pt;
-  font-weight: bold;
-  color: #fff;
-  padding: 0;
-  background: #444;
-  margin: 0 0 0.5em 0;
-  padding: 0.5em;
+    text-align: center;
+    font-size: 32pt;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+    background: #444;
+    margin: 0 0 0 0;
+    padding: 0.5em;
 }
 
 .controlbar{
@@ -38,7 +39,7 @@ footer {
     background: #444;
     position: absolute;
     bottom: 0;
-
+    
     height: 30px;
     width: 100%;
 }

@@ -261,23 +261,21 @@ function getAll() {
   CurrentTemperature = get("currentTemperature", "current_temperature");
   document.getElementById("tempNow").innerHTML = CurrentTemperature + "°C";
   TargetTemperature = get("targetTemperature", "target_temperature");
-  if (TargetTemperature > CurrentTemperature) {
-      document.getElementById("message").innerHTML = "The house is getting warm and cozy!";
-      document.getElementById("arrow").src="images/white/arrow_up.png";
-      document.getElementById("heatgrad").src="images/heatgradient_heat.png";
-  }
-  else if (TargetTemperature < CurrentTemperature) {
-      document.getElementById("message").innerHTML = "Hi! I am currently cooling the house down for you!";
-      document.getElementById("arrow").src="images/white/arrow_down.png";
-      document.getElementById("heatgrad").src="images/heatgradient_cool.png";
-  }
-  else if (TargetTemperature == CurrentTemperature) {
-      document.getElementById("message").innerHTML = "Desired temperature has been achieved. Mission accomplished!";
+  
+  if (TargetTemperature == CurrentTemperature) {
+      document.getElementById("message").innerHTML = "Desired temperature achieved.";
       document.getElementById("arrow").src="images/white/arrow_stable.png";
       document.getElementById("heatgrad").src="images/heatgradient2.png";
-  }
-  else {
-      document.getElementById("message").innerHTML = "Oh oh! It seems something broke! Please allow unsave scripts to be run!";
+  } else if (TargetTemperature > CurrentTemperature) {
+      document.getElementById("message").innerHTML = "Heating up!";
+      document.getElementById("arrow").src="images/white/arrow_up.png";
+      document.getElementById("heatgrad").src="images/heatgradient_heat.png";
+  } else if (TargetTemperature < CurrentTemperature) {
+      document.getElementById("message").innerHTML = "Cooling down!";
+      document.getElementById("arrow").src="images/white/arrow_down.png";
+      document.getElementById("heatgrad").src="images/heatgradient_cool.png";
+  } else {
+      document.getElementById("message").innerHTML = "Oh oh! It seems something went wrong. Please allow unsave scripts to be run!";
       document.getElementById("arrow").src="images/white/arrow_stable.png";
       document.getElementById("heatgrad").src="images/heatgradient2.png";
   }          
