@@ -259,27 +259,27 @@ function getAll() {
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   CurrentTemperature = get("currentTemperature", "current_temperature");
-  document.getElementById("tempNow").innerHTML = CurrentTemperature;
+  document.getElementById("tempNow").innerHTML = CurrentTemperature + "°C";
   TargetTemperature = get("targetTemperature", "target_temperature");
   if (TargetTemperature > CurrentTemperature) {
-      document.body.style.background = 'linear-gradient(#FFDB17 , #E8750C)' ;
       document.getElementById("message").innerHTML = "The house is getting warm and cozy!";
       document.getElementById("arrow").src="images/white/arrow_up.png";
+      document.getElementById("heatgrad").src="images/heatgradient_heat.png";
   }
   else if (TargetTemperature < CurrentTemperature) {
-      document.body.style.background = 'linear-gradient(#00D5E8 , #175EA1)' ;
       document.getElementById("message").innerHTML = "Hi! I am currently cooling the house down for you!";
       document.getElementById("arrow").src="images/white/arrow_down.png";
+      document.getElementById("heatgrad").src="images/heatgradient_cool.png";
   }
-  else if (TargetTemperature = CurrentTemperature) {
-      document.body.style.background = 'linear-gradient(#3AC400 , #247A00)' ;
+  else if (TargetTemperature == CurrentTemperature) {
       document.getElementById("message").innerHTML = "Desired temperature has been achieved. Mission accomplished!";
       document.getElementById("arrow").src="images/white/arrow_stable.png";
+      document.getElementById("heatgrad").src="images/heatgradient2.png";
   }
   else {
-      document.body.style.backgroundColor = 'white' ;
       document.getElementById("message").innerHTML = "Oh oh! It seems something broke! Please allow unsave scripts to be run!";
       document.getElementById("arrow").src="images/white/arrow_stable.png";
+      document.getElementById("heatgrad").src="images/heatgradient2.png";
   }          
 }
 

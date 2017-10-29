@@ -27,15 +27,14 @@ header h1{
 >>>>>>> af04db1b27b24db73fc603af8b7a402f007b5b01
 }
 
-section .row img {
+section .dis img {
     margin: 5px;
-    width: 50px;
-    height: 50px;
+    width: 10vw;
+    height: 10vw;
 }
 
-section .row{
-    align: center;
-    width: 100%;
+section .dis h3 {
+    font-size: 6vw;
 }
 
 .controlbar{
@@ -95,6 +94,6 @@ footer {
 
 .housecontainer img{
     padding: 4em;
-    width: 30%;
-    height: 30%;
+    width: 50vh;
+    height: 50vh;
 }
