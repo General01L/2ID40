@@ -1,57 +1,48 @@
 <!DOCTYPE>
 <html>
-  <head>
-    <title>2ID40 Thermostat</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="Dash/dashboard.css">
-  </head>
-  <body>
-    <header class="container">
-      <div class="row text-center">
-        <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
-      </div>
-    </header>
-    <section class="container">
-      <div class="row">
-        <div class="col-sm-4 text-center">
-          <div class="nextswitch">
-            <p>Switch to night temperature at 21:30</p>
-          </div>
-        </div>
-        <div class="col-sm-4 text-center">
-          <div class="welcomemessage">
-            <p><span id="message"></span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container">
-      <div class="row text-center">
-        <div class="thermostat">
-          <a href='temperature.html'><div id="circle">
-            <a href='temperature.html'><img src="images/heatgradient2.png" id="heatgrad"/></a>
-            <p><span id="tempNow"></span></p>
-          </div></a>
-          <img src="images/white/arrow_up.png" id="arrow"/>
-        </div>
-      </div>
-    </section>
-    <section class="controlbar">
-      <div class="row text-center">           
-        <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
-        <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
-        <a href='schedule2.html'><img src="images/white/calendar.png"/></a>
-        <a href='settings.html'><img src="images/white/settings.png"/></a>
-      </div>
-    </section>
-    <footer>
-      <div class="row">
-        <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
-      </div>
-    </footer>
-  </body>
-  <script src='js/jquery-2.1.0.min.js'></script>
-  <script src='Dash/script.js'></script>
+    <head>
+        <title>2ID40 Thermostat</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="Dash/dashboard.css">
+    </head>
+    <body>
+        <header class="container">
+            <div class="row text-center">
+                <h1><span id="dayNow"></span>, <span id="timeNow"></span></h1>
+            </div>
+        </header>
+        <section class="container">
+            <div class="welcomemessage">
+                <p><span id="message"></span></p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row text-center">
+                <div class="thermostat">
+                    <a href='temperature.html'><div id="circle">
+                        <a href='temperature.html'><img src="images/heatgradient2.png" id="heatgrad"/></a>
+                        <p><span id="tempNow"></span></p>
+                    </div></a>
+                    <img src="images/white/arrow_up.png" id="arrow"/>
+                </div>
+            </div>
+        </section>
+        <section class="controlbar">
+            <div class="row text-center">           
+                <a href='index.html'><img src="images/white/dashboard2.png"/></a> 
+                <a href='temperature.html'><img src="images/white/thermostat.png"/></a>
+                <a href='schedule2.html'><img src="images/white/calendar.png"/></a>
+                <a href='settings.html'><img src="images/white/settings.png"/></a>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <p class="col-sm-12 text-center">&#9; &copy; 2ID40 Final Assignment group 4, 2017</p>
+            </div>
+        </footer>
+    </body>
+    <script src='js/jquery-2.1.0.min.js'></script>
+    <script src='Dash/script.js'></script>
 </html>
