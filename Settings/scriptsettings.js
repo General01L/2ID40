@@ -260,11 +260,11 @@ function getAll() {
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   ProgramState = get("weekprogramstate", "week_program_state");
-  if (ProgramState == "on") {
-      document.getElementById("vacationMode").checked = false;
+  if (ProgramState = "off") {
+      document.getElementById("vacationMode").checked = true;
   }
   else {
-      document.getElementById("vacationMode").checked = true;
+      document.getElementById("vacationMode").checked = false;
   }
 }
 
@@ -290,7 +290,7 @@ function setSystemTime() {
 
 //apply server vacation mode
 function setVacationMode() {
-  vacation = document.getElementById("vacationMode").checked;
+  document.getElementById("vacationMode").checked;
   if (vacation = "true") {
       ProgramState = "off";
       put("weekprogramstate", "week_program_state", ProgramState);
