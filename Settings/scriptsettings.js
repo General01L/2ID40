@@ -293,10 +293,12 @@ function setVacationMode() {
   if (ProgramState = "on") {
       ProgramState = "off";
       put("weekprogramstate", "week_program_state", ProgramState);
+      document.getElementById("onOff").innerHTML = "Turn Off"
   }
   else {
       ProgramState = "on";
       put("weekprogramstate", "week_program_state", ProgramState);
+      document.getElementById("onOff").innerHTML = "Turn On";
   }
 }
 
