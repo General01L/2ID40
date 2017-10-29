@@ -633,4 +633,8 @@ function getAll() {
     document.getElementById("timeNow").innerHTML = Time;
 }
 
+setInterval(function(){ 
+    getAll(); 
+}, 500);
+
 $(document).ready(getAll);

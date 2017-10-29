@@ -318,4 +318,8 @@ function addZero(num){
     }
 }
 
+setInterval(function(){ 
+    getAll(); 
+}, 500);
+
 $(document).ready(getAll);

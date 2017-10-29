@@ -302,4 +302,8 @@ function setVacationMode() {
     }
 }
 
+setInterval(function(){ 
+    getAll(); 
+}, 500);
+
 $(document).ready(getAll);

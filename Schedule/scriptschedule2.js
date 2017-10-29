@@ -259,9 +259,9 @@ function getAll() {
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;        
 }
-/*
-setTimeout(function(){
-   window.location.reload(true);
-}, 4000);
-*/
+
+setInterval(function(){ 
+    getAll(); 
+}, 500);
+
 $(document).ready(getAll);
