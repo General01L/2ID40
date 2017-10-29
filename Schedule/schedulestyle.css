@@ -69,21 +69,23 @@
 #todaymenu {
     float: none;
     text-align:center;
-
+    height: 4vh;
     font-size: 24pt;
     padding: 0px 10%;
 }
 
 #todaymenu p {
     text-transform: uppercase;
+    vertical-align: center;
+    line-height: 4vh;
 }
 
 #todaymenu button {
-    background: rgba(255, 255, 255, 0.5);;
+    background: rgba(255, 255, 255, 0.5);
     border: 0;
-    border-radius: 20px;
+    border-radius: 1000px;
     padding: 5px;
-    margin-top:5px;
+    margin: 10px;
 }
 
 #todaymenu button:hover {
@@ -91,8 +93,8 @@
 }
 
 #todaymenu img {
-    width: 24px;
-    height: 24px;
+    width: 3vh;
+    height: 3vh;
 }
 
 /* slider2 + 3 */
