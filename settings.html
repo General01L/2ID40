@@ -46,9 +46,13 @@
       <div class="row text-center">
         <div class="col-sm-12">
           <p>Turn vacation mode on/off.</p>
-          <label>
-            <input type="checkbox" id="vacationMode" onclick="setVacationMode()">
-          </label>
+          <button onclick="setVacationMode()"><span id="onOff"></span></button>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <p>Reset the weekly program to factory settings. This cannot be undone and all saved day and night times will be lost!</p>
+          <button onclick="setDefault()">Reset Program</button>
         </div>
       </div>
     </div>       
