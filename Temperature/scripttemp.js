@@ -67,10 +67,10 @@ function sortMergeProgram(day) {
 */
 function get(attribute_name, xml_tag) {
     return requestData(
-        "/"+attribute_name,
-        function(data) {
-            return $(data).find(xml_tag).text();
-        }
+    "/"+attribute_name,
+    function(data) {
+        return $(data).find(xml_tag).text();
+    }
     );
 }
 
@@ -78,23 +78,23 @@ function get(attribute_name, xml_tag) {
 */
 function getWeekProgram() {
     return requestData(
-        '/weekProgram',
-        function(data) {
-            $(data).find('day').each(function() {
-                var day = $(this).attr('name');
-                Program[day] = [];
-                $(this).find('switch').each(function() {
-                    if ($(this).attr('state') == 'on') {
-                        if ($(this).attr('type') == Type.Day) {
-                            getProgram(day).push([$(this).text(), '00:00']);
+    '/weekProgram',
+    function(data) {
+        $(data).find('day').each(function() {
+            var day = $(this).attr('name');
+            Program[day] = [];
+            $(this).find('switch').each(function() {
+                if ($(this).attr('state') == 'on') {
+                    if ($(this).attr('type') == Type.Day) {
+                        getProgram(day).push([$(this).text(), '00:00']);
                         } else {
-                            getProgram(day)[getProgram(day).length - 1][1] = $(this).text();
-                        }
+                        getProgram(day)[getProgram(day).length - 1][1] = $(this).text();
                     }
-                })
-            });
-            return Program;
-        }
+                }
+            })
+        });
+        return Program;
+    }
     );
 }
 
@@ -127,40 +127,40 @@ function setWeekProgram() {
     for (var key in Program) {
         var day = doc.createElement('day');
         day.setAttribute('name', key);
-
+        
         var daySwitches = [];
         var nightSwitches = [];
-
+        
         var i, text, sw;
         var periods = getProgram(key);
         for (i = 0; i < periods.length; i++ ) {
             daySwitches.push(periods[i][0]);
             nightSwitches.push(periods[i][1]);
         }
-
+        
         for (i = 0; i < MaxSwitches; i++) {
             sw = doc.createElement('switch');
             sw.setAttribute('type', Type.Day);
-
+            
             if (i < daySwitches.length) {
                 sw.setAttribute('state', 'on');
                 text = doc.createTextNode(daySwitches[i]);
-            } else {
+                } else {
                 sw.setAttribute('state', 'off');
                 text = doc.createTextNode('00:00');
             }
             sw.appendChild(text);
             day.appendChild(sw);
         }
-
+        
         for (i = 0; i < MaxSwitches; i++ ) {
             sw = doc.createElement('switch');
             sw.setAttribute('type', Type.Night);
-
+            
             if (i < nightSwitches.length) {
                 sw.setAttribute('state', 'on');
                 text = doc.createTextNode(nightSwitches[i]);
-            } else {
+                } else {
                 sw.setAttribute('state', 'off');
                 text = doc.createTextNode('00:00');
             }
@@ -182,12 +182,12 @@ function setDefault() {
     for (var key in Program) {
         var day = doc.createElement('day');
         day.setAttribute('name', key);
-
+        
         var daySwitches = [];
         var nightSwitches = [];
-
+        
         var i, text, sw;
-
+        
         for (i = 0; i < MaxSwitches; i++) {
             sw = doc.createElement('switch');
             sw.setAttribute('type', Type.Night);
@@ -196,7 +196,7 @@ function setDefault() {
             sw.appendChild(text);
             day.appendChild(sw);
         }
-
+        
         for (i = 0; i < MaxSwitches; i++) {
             sw = doc.createElement('switch');
             sw.setAttribute('type', Type.Day);
@@ -205,7 +205,7 @@ function setDefault() {
             sw.appendChild(text);
             day.appendChild(sw);
         }
-
+        
         program.appendChild(day);
     }
     doc.appendChild(program);
@@ -236,7 +236,7 @@ function addPeriod(day, start, end) {
 }
 
 /* Removes a heating period from a specific day.
-   idx is the idex of the period with values from 0 to 4
+    idx is the idex of the period with values from 0 to 4
 */
 function removePeriod(day, idx) {
     var program = getWeekProgram()[day];
@@ -249,56 +249,64 @@ function removePeriod(day, idx) {
 /* Checks whether the temperature is within the range [5.0,30.0]
 */
 function inTemperatureBoundaries(temp) {
-  temp = parseFloat(temp);
-  return ( temp >= MinTemperature && temp <= MaxTemperature);
+    temp = parseFloat(temp);
+    return ( temp >= MinTemperature && temp <= MaxTemperature);
 }
 
 // Temperature sliders
 var sliderDay = document.getElementById("myDay");
 var outputDay = document.getElementById("dayTemp");
-outputDay.innerHTML = sliderDay.value;
+outputDay.innerHTML = addZero(sliderDay.value);
 
 sliderDay.oninput = function() {
-    outputDay.innerHTML = this.value;
+    outputDay.innerHTML = addZero(this.value);
     DayTemperature = this.value;
     put("dayTemperature", "day_temperature", DayTemperature); 
 }
 
 var sliderNight = document.getElementById("myNight");
 var outputNight = document.getElementById("nightTemp");
-outputNight.innerHTML = sliderNight.value;
+outputNight.innerHTML = addZero(sliderNight.value);
 
 sliderNight.oninput = function() {
-    outputNight.innerHTML = this.value;
+    outputNight.innerHTML = addZero(this.value);
     NightTemperature = this.value;
     put("nightTemperature", "night_temperature", NightTemperature); 
 }
 
 var sliderOverride = document.getElementById("myOverride");
 var outputOverride = document.getElementById("overrideTemp");
-outputOverride.innerHTML = sliderOverride.value;
+outputOverride.innerHTML = addZero(sliderOverride.value);
 
 sliderOverride.oninput = function() {
-    outputOverride.innerHTML = this.value;
+    outputOverride.innerHTML = addZero(this.value);
     TargetTemperature = this.value;
     put("targetTemperature", "target_temperature", TargetTemperature); 
 }
 
 //Load all initial values
 function getAll() {
-  CurrentDay = get("day", "current_day");
-  document.getElementById("dayNow").innerHTML = CurrentDay;
-  Time =get("time", "time");
-  document.getElementById("timeNow").innerHTML = Time;
-  DayTemperature = get("dayTemperature", "day_temperature");
-  document.getElementById("myDay").value = DayTemperature;  
-  outputDay.innerHTML = DayTemperature;
-  NightTemperature = get("nightTemperature", "night_temperature");
-  document.getElementById("myNight").value = NightTemperature;
-  outputNight.innerHTML = NightTemperature;
-  TargetTemperature = get("targetTemperature", "target_temperature");
-  document.getElementById("myOverride").value = TargetTemperature;
-  outputOverride.innerHTML = TargetTemperature;
+    CurrentDay = get("day", "current_day");
+    document.getElementById("dayNow").innerHTML = CurrentDay;
+    Time =get("time", "time");
+    document.getElementById("timeNow").innerHTML = Time;
+    DayTemperature = get("dayTemperature", "day_temperature");
+    document.getElementById("myDay").value = DayTemperature;
+    outputDay.innerHTML = DayTemperature;
+    NightTemperature = get("nightTemperature", "night_temperature");
+    document.getElementById("myNight").value = NightTemperature;
+    outputNight.innerHTML = NightTemperature;
+    TargetTemperature = get("targetTemperature", "target_temperature");
+    document.getElementById("myOverride").value = TargetTemperature;
+    outputOverride.innerHTML = TargetTemperature;
+}
+
+function addZero(num){
+    if (num%1 == 0){
+        return (String(num) + ".0");
+    } else {
+    return String(num);
+    }
 }
 
 $(document).ready(getAll);
