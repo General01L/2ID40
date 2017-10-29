@@ -259,6 +259,12 @@ function getAll() {
   document.getElementById("dayNow").innerHTML = CurrentDay;
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
+  ProgramState = get("weekprogramstate", "week_program_state");
+  if (ProgramState = "on") {
+      document.getElementById("vacationMode").checked = false;
+  }
+  else {
+      document.getElementById("vacationMode").checked = true;
 }
 
 
@@ -283,14 +289,13 @@ function setSystemTime() {
 
 //apply server vacation mode
 function setVacationMode(cb) {
-  display("Clicked, new value = " + cb.checked);
-  ProgramState = get("weekprogramstate", "week_program_state");
-  if (ProgramState == "off") {
-      ProgramState = "on";
+  vacation = document.getElementById("vacationMode").value;
+  if (vacation = "on") {
+      ProgramState = "off";
       put("weekprogramstate", "week_program_state", ProgramState);
   }
   else {
-      ProgramState = "off";
+      ProgramState = "on";
       put("weekprogramstate", "week_program_state", ProgramState);
   }
 }
