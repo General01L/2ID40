@@ -261,6 +261,9 @@ outputDay.innerHTML = addZero(sliderDay.value);
 sliderDay.oninput = function() {
     outputDay.innerHTML = addZero(this.value);
     DayTemperature = this.value;
+}
+
+sliderDay.onchange = function() {
     put("dayTemperature", "day_temperature", DayTemperature); 
 }
 
@@ -271,6 +274,9 @@ outputNight.innerHTML = addZero(sliderNight.value);
 sliderNight.oninput = function() {
     outputNight.innerHTML = addZero(this.value);
     NightTemperature = this.value;
+}
+
+sliderNight.onchange = function() {
     put("nightTemperature", "night_temperature", NightTemperature); 
 }
 
@@ -281,6 +287,9 @@ outputOverride.innerHTML = addZero(sliderOverride.value);
 sliderOverride.oninput = function() {
     outputOverride.innerHTML = addZero(this.value);
     TargetTemperature = this.value;
+}
+
+sliderOverride.onchange = function() {
     put("targetTemperature", "target_temperature", TargetTemperature); 
 }
 
