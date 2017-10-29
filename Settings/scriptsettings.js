@@ -287,11 +287,11 @@ function setVacationMode(cb) {
   ProgramState = get("weekprogramstate", "week_program_state");
   if (ProgramState == "off") {
       ProgramState = "on";
-      put("programstate", "program_state", ProgramState);
+      put("weekprogramstate", "week_program_state", ProgramState);
   }
   else {
       ProgramState = "off";
-      put("programstate", "program_state", ProgramState);
+      put("weekprogramstate", "week_program_state", ProgramState);
   }
 }
 
