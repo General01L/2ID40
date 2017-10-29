@@ -260,7 +260,7 @@ function getAll() {
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   ProgramState = get("weekprogramstate", "week_program_state");
-  if (ProgramState = "on") {
+  if (ProgramState == "on") {
       document.getElementById("vacationMode").checked = false;
   }
   else {
