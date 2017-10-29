@@ -30,7 +30,7 @@ var NightTemperature;
 var CurrentTemperature;
 var TargetTemperature;
 var ProgramState;
-var vacationMode;
+var vacation;
 
 var Program = {};
 Program[Days.Monday]    = [];
@@ -286,6 +286,19 @@ function setSystemTime() {
     Time = document.getElementById("newTime").value;
     document.getElementById("timeNow").innerHTML = Time; 
     put("time", "time", Time);
+}
+
+//apply server vacation mode
+function setVacationMode() {
+    vacation = document.getElementById("vacationMode").checked;
+    if (vacation = "true") {
+        ProgramState = "off";
+        put("weekprogramstate", "week_program_state", ProgramState);
+    }
+    else {
+        ProgramState = "on";
+        put("weekprogramstate", "week_program_state", ProgramState);
+    }
 }
 
 $(document).ready(getAll);
