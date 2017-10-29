@@ -261,7 +261,6 @@ function getAll() {
   CurrentTemperature = get("currentTemperature", "current_temperature");
   document.getElementById("tempNow").innerHTML = CurrentTemperature + "°C";
   TargetTemperature = get("targetTemperature", "target_temperature");
-  console.log(TargetTemperature + "  " + CurrentTemperature);
   
   if (TargetTemperature == CurrentTemperature) {
       document.getElementById("message").innerHTML = "Desired temperature achieved.";
