@@ -289,8 +289,8 @@ function setSystemTime() {
 
 //apply server vacation mode
 function setVacationMode(cb) {
-  vacation = document.getElementById("vacationMode").value;
-  if (vacation = "on") {
+  vacation = document.getElementById("vacationMode").checked;
+  if (vacation = true) {
       ProgramState = "off";
       put("weekprogramstate", "week_program_state", ProgramState);
   }
