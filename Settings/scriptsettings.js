@@ -265,6 +265,7 @@ function getAll() {
   }
   else {
       document.getElementById("vacationMode").checked = true;
+  }
 }
 
 
