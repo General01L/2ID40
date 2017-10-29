@@ -264,18 +264,22 @@ function getAll() {
   if (TargetTemperature > CurrentTemperature) {
       document.body.style.background = 'linear-gradient(#FFDB17 , #E8750C)' ;
       document.getElementById("message").innerHTML = "The house is getting warm and cozy!";
+      document.getElementById("arrow").src="images/white/arrow_up.png";
   }
   else if (TargetTemperature < CurrentTemperature) {
       document.body.style.background = 'linear-gradient(#00D5E8 , #175EA1)' ;
       document.getElementById("message").innerHTML = "Hi! I am currently cooling the house down for you!";
+      document.getElementById("arrow").src="images/white/arrow_down.png";
   }
   else if (TargetTemperature = CurrentTemperature) {
       document.body.style.background = 'linear-gradient(#3AC400 , #247A00)' ;
       document.getElementById("message").innerHTML = "Desired temperature has been achieved. Mission accomplished!";
+      document.getElementById("arrow").src="images/white/arrow_stable.png";
   }
   else {
       document.body.style.backgroundColor = 'white' ;
       document.getElementById("message").innerHTML = "Oh oh! It seems something broke! Please allow unsave scripts to be run!";
+      document.getElementById("arrow").src="images/white/arrow_stable.png";
   }          
 }
 
