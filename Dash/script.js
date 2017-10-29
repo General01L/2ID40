@@ -261,16 +261,17 @@ function getAll() {
   CurrentTemperature = get("currentTemperature", "current_temperature");
   document.getElementById("tempNow").innerHTML = CurrentTemperature + "°C";
   TargetTemperature = get("targetTemperature", "target_temperature");
+  console.log(TargetTemperature + "  " + CurrentTemperature);
   
   if (TargetTemperature == CurrentTemperature) {
       document.getElementById("message").innerHTML = "Desired temperature achieved.";
       document.getElementById("arrow").src="images/white/arrow_stable.png";
       document.getElementById("heatgrad").src="images/heatgradient2.png";
-  } else if (TargetTemperature > CurrentTemperature) {
+  } else if (parseInt(TargetTemperature) > parseInt(CurrentTemperature)) {
       document.getElementById("message").innerHTML = "Heating up!";
       document.getElementById("arrow").src="images/white/arrow_up.png";
       document.getElementById("heatgrad").src="images/heatgradient_heat.png";
-  } else if (TargetTemperature < CurrentTemperature) {
+  } else if (parseInt(TargetTemperature) < parseInt(CurrentTemperature)) {
       document.getElementById("message").innerHTML = "Cooling down!";
       document.getElementById("arrow").src="images/white/arrow_down.png";
       document.getElementById("heatgrad").src="images/heatgradient_cool.png";
