@@ -291,11 +291,13 @@ function getAll() {
   Time =get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   DayTemperature = get("dayTemperature", "day_temperature");
-  document.getElementById("").innerHTML = CurrentDay;  
+  document.getElementById("myDay").value = DayTemperature;  
   outputDay.innerHTML = DayTemperature;
   NightTemperature = get("nightTemperature", "night_temperature");
+  document.getElementById("myNight").value = NightTemperature;
   outputNight.innerHTML = NightTemperature;
   TargetTemperature = get("targetTemperature", "target_temperature");
+  document.getElementById("myOverride").value = TargetTemperature;
   outputOverride.innerHTML = TargetTemperature;
 }
 
