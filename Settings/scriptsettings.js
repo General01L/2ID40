@@ -260,11 +260,11 @@ function getAll() {
   Time = get("time", "time");
   document.getElementById("timeNow").innerHTML = Time;
   ProgramState = get("weekprogramstate", "week_program_state");
-  if (ProgramState == "off") {
-      document.getElementById("vacationMode").checked = true;
+  if (ProgramState == "on") {
+      document.getElementById("vacationMode").checked = false;
   }
   else {
-      document.getElementById("vacationMode").checked = false;
+      document.getElementById("vacationMode").checked = true;
   }
 }
 
@@ -290,14 +290,15 @@ function setSystemTime() {
 
 //apply server vacation mode
 function setVacationMode() {
-    if (document.getElementById("vacationMode").checked = true) {
-        ProgramState = "off";
-        put("weekprogramstate", "week_program_state", ProgramState);
-    }
-    else {
-        ProgramState = "on";
-        put("weekprogramstate", "week_program_state", ProgramState);
-    }
+  vacation = document.getElementById("vacationMode").checked;
+  if (vacation = "true") {
+      ProgramState = "off";
+      put("weekprogramstate", "week_program_state", ProgramState);
+  }
+  else {
+      ProgramState = "on";
+      put("weekprogramstate", "week_program_state", ProgramState);
+  }
 }
 
 $(document).ready(getAll);
