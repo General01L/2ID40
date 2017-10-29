@@ -261,10 +261,10 @@ function getAll() {
   document.getElementById("timeNow").innerHTML = Time;
   ProgramState = get("weekprogramstate", "week_program_state");
   if (ProgramState = "off") {
-      document.getElementById("vacationMode").checked = true;
+      document.getElementById("onOff").innerHTML = "Turn Off";
   }
   else {
-      document.getElementById("vacationMode").checked = false;
+      document.getElementById("onOff").innerHTML = "Turn On";
   }
 }
 
