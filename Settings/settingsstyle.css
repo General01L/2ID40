@@ -85,19 +85,13 @@ footer {
 .slider {
   padding: 2em;
   cursor: pointer;
-  width: 60px;
+  width: 70px;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -119,9 +113,9 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 20px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  border-radius: 25%;
 }
