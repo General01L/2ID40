@@ -83,13 +83,9 @@ footer {
 
 /* The slider */
 .slider {
-  position: absolute;
+  padding: 2em;
   cursor: pointer;
-  width: 100px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 60px;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
